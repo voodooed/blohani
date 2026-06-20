@@ -1,0 +1,87 @@
+{
+  "sensors": [
+    {
+      "name": "Terrestrial Laser Scanners (TLS)",
+      "category": "Terrestrial LiDAR",
+      "specs": "Equipped with state-of-the-art TLS systems including RIEGL, Optech ILRIS 3D, and FARO FocusS sensors for high-precision, millimeter-accuracy 3D documentation, heritage preservation, and forestry morphology.",
+      "image": "tls-scanner.jpg"
+    },
+    {
+      "name": "Mobile & UAV LiDAR Sensors",
+      "category": "Mobile & Aerial LiDAR",
+      "specs": "Features lightweight Velodyne Puck LiDAR sensors and Trimble V10 Imaging Rovers, integrated with microdrones and mobile platforms for mapping dynamic urban environments and extracting road geometry.",
+      "image": "uav-lidar.jpg"
+    },
+    {
+      "name": "Geodetic & GNSS Infrastructure",
+      "category": "Positioning & Navigation",
+      "specs": "Hosts an IGS-standard Continuously Operating Reference Station (CORS) with Trimble Alloy GNSS receivers and Choke Ring Antennas. Fleet includes Trimble R10/R8/R4 GNSS receivers and Trimble S8/S5 Robotic Total Stations.",
+      "image": "gnss-station.jpg"
+    },
+    {
+      "name": "Precision Gravimeters",
+      "category": "Geodesy & Gravity",
+      "specs": "High-precision terrestrial gravity measurement utilizing Autograv CG-6 and gPhone Mg LaCoste gravimeters for advanced geoid modeling and earth system dynamics.",
+      "image": "gravimeter.jpg"
+    }
+  ],
+  "vehicles": [
+    {
+      "name": "Mobile Mapping System (MMS) Vehicle",
+      "description": "A custom-configured survey vehicle serving as a land-based mobile mapping platform. Integrated with laser scanners, high-grade IMUs, and GPS/GNSS receivers to capture complex roadway environments, pole-like structures, and urban feature data at highway speeds.",
+      "image": "mms-vehicle.jpg"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "Ke-MLS Urban Mobile LiDAR Dataset",
+      "description": "A large-scale, accurately labelled mobile LiDAR dataset captured from an Indian urban region. Extensively utilized for benchmarking deep learning architectures and 3D semantic segmentation of complex cityscapes.",
+      "access": "Published in Environment and Planning B: Urban Analytics and City Science.",
+      "link": "https://www.lidaverse.com/"
+    },
+    {
+      "name": "Shivalik Range Tree Scan Dataset",
+      "description": "A comprehensive dataset combining Terrestrial and Airborne Laser Scanning of trees in the Shivalik Range, India. It includes field measurements and distinct leaf–wood classifications for precision forestry upscaling.",
+      "access": "Published in Scientific Data (Nature).",
+      "link": "https://www.lidaverse.com/"
+    },
+    {
+      "name": "LADS (LiDAR Adaptation Dataset Suite)",
+      "description": "A specialized dataset suite designed alongside the ReaLiTy framework for LiDAR adaptation across various sensors and adverse weather conditions, significantly aiding in sim-to-real gap reduction.",
+      "access": "LiDAVerse",
+      "link": "https://www.lidaverse.com/"
+    }
+  ],
+  "computing": [
+    {
+      "name": "Deep Learning & Point Cloud Simulation Cluster",
+      "description": "High-performance computing infrastructure featuring multi-GPU arrays (e.g., NVIDIA A100 architectures) and high-speed NVMe storage. Specifically optimized for training 3D Convolutional Neural Networks (CNNs), processing massive point clouds, 3D Gaussian Splatting, and running heavy physics-informed scenario simulations."
+    },
+    {
+      "name": "Workstations",
+      "description": "High-end workstations equipped with institute-wide and multiple-license access to industry-standard softwares, including Terrascan, Microstation, ArcGIS, ERDAS, and Leica Photogrammetric Suite."
+    }
+  ],
+  "platforms": [
+    {
+      "name": "SimDaaS",
+      "description": "A cutting-edge simulation platform commercialized through SimDaaS Autonomy Pvt. Ltd. Used extensively for the design, training, and testing of autonomous vehicle perception systems under physically accurate simulated conditions.",
+      "link": "https://simdaas.com/"
+    },
+    {
+      "name": "Limulator",
+      "description": "An award-winning, comprehensive software tool for simulating LiDAR sensors and generating point cloud data inside the laboratory. Widely adopted globally as an educational and research tool with over 10,000 downloads.",
+      "link": "https://home.iitk.ac.in/~blohani/Limulator/Lim_index.html"
+    },
+    {
+      "name": "LASViewer & LASUtility",
+      "description": "In-house developed software suites for advanced LiDAR data visualization (including immersive 3D viewing), data measurement, marking, trimming, and seamless format conversion.",
+      "link": "https://home.iitk.ac.in/~blohani/LASUtility/LASUtility.html"
+    },
+    {
+      "name": "Smart Sprayer AI",
+      "description": "An intelligent, LiDAR-guided tractor-mounted orchard spraying system designed to identify tree morphology in real-time and apply treatments only where required, enhancing precision agriculture.",
+      "link": "https://www.iitk.ac.in/develops-lidar-based-intelligent-sprayer"
+    }
+  ]
+}

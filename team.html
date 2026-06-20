@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Meet the Principal Investigator, researchers, PhD and M.Tech students, and alumni of the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+  .prof-grid { display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: start; }
+  .prof-card { background: linear-gradient(160deg, var(--navy), var(--steel)); border-radius: var(--r-lg); padding: 36px 28px; color: var(--white); text-align: center; }
+  .prof-avatar {
+    width: 150px; height: 150px; background: rgba(255,255,255,0.12); border-radius: 50%; margin: 0 auto 18px;
+    display: flex; align-items: center; justify-content: center; font-family: var(--f-display);
+    font-size: 2.3rem; font-weight: 600; border: 3px solid rgba(255,255,255,0.25); overflow: hidden;
+  }
+  .prof-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .prof-card h2 { color: var(--white); font-size: 1.2rem; margin-bottom: 4px; }
+  .prof-designation { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-bottom: 16px; }
+  .prof-pill { display: inline-block; background: rgba(255,255,255,0.14); border-radius: 100px; padding: 4px 12px; font-size: 0.72rem; margin: 3px; }
+  .prof-contacts { margin-top: 22px; border-top: 1px solid rgba(255,255,255,0.18); padding-top: 18px; display:flex; flex-direction:column; gap:8px; }
+  .prof-contacts a { display: flex; align-items: center; gap: 8px; justify-content: center; font-size: 0.78rem; color: rgba(255,255,255,0.78); text-decoration: none; }
+  .prof-contacts a:hover { color: var(--white); }
+  
+  .edu-entry { display: flex; gap: 16px; margin-bottom: 18px; }
+  .edu-dot { width: 9px; height: 9px; background: var(--steel); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+  .edu-entry h4 { font-size: 0.92rem; font-weight: 600; color: var(--ink); }
+  .edu-entry p { font-size: 0.82rem; color: var(--muted); }
+  
+  /* Student Card with Avatar & Links */
+  .student-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .student-card { display: flex; align-items: flex-start; gap: 16px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 22px; transition: border-color .2s, box-shadow .2s; }
+  .student-card:hover { border-color: var(--steel); box-shadow: var(--shadow); }
+  
+  .student-avatar { width: 100px; height: 100px; border-radius: 50%; background: var(--navy); color: var(--sand); display: flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 600; font-size: 1.1rem; flex-shrink: 0; overflow: hidden; border: 2px solid #f0f0f0;}
+  .student-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  
+  .student-info { flex: 1; }
+  .student-name { font-weight: 600; font-size: 0.92rem; color: var(--ink); margin-bottom: 4px; }
+  .student-topic { font-size: 0.82rem; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }
+  .student-meta { font-size: 0.72rem; color: var(--steel); font-weight: 600; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.05em;}
+  
+  /* ADDED: Styling for Email, LinkedIn, and Website links */
+  .student-links { display: flex; gap: 12px; margin-top: 10px; }
+  .student-links a { color: var(--steel); font-size: 0.9rem; transition: color 0.2s; text-decoration: none; }
+  .student-links a:hover { color: var(--navy); }
+  
+  /* Researchers Grid */
+  .researcher-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 40px; }
+  
+  @media (max-width: 980px) { .prof-grid { grid-template-columns: 1fr; } .student-grid, .researcher-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .student-grid, .researcher-grid { grid-template-columns: 1fr; } }
+  
+  /* Tabs layout update */
+  .tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 10px;}
+  .tab { background: none; border: none; font-size: 0.9rem; font-weight: 600; color: var(--muted); padding: 8px 16px; cursor: pointer; border-radius: 4px; transition: all 0.2s; }
+  .tab:hover { color: var(--navy); background: rgba(0,0,0,0.03); }
+  .tab.active { color: var(--white); background: var(--navy); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">People</div>
+      <h1>Researchers and Students</h1>
+      <p class="lead">
+      LiDAR@Geoinformatics Laboratory brings together faculty members, researchers, doctoral scholars, postgraduate students, and undergraduate researchers working across LiDAR technologies, geospatial science, and emerging spatial intelligence applications.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Principal Investigator</div>
+        <h2 class="section-title" id="prof-name">Dr. Bharat Lohani</h2>
+      </div>
+      <div class="prof-grid">
+        <div class="prof-card">
+          <div class="prof-avatar" id="prof-avatar">BL</div>
+          <h2 id="prof-name-card">Dr. Bharat Lohani</h2>
+          <div class="prof-designation" id="prof-designation">Professor · IIT Kanpur</div>
+          <div id="prof-pills"></div>
+          <div class="prof-contacts" id="prof-contacts"></div>
+        </div>
+        <div>
+          <p class="section-desc" id="prof-bio" style="margin-bottom:24px;"></p>
+          <div class="kicker">Education</div>
+          <div id="prof-education" style="margin-top:14px;margin-bottom:28px;"></div>
+          <div class="kicker">Areas of Specialization</div>
+          <div class="tag-row" id="prof-specs" style="margin-top:14px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section alt" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Research Staff</div>
+        <h2 class="section-title">FARE Fellows & Postdoctoral Researchers</h2>
+      </div>
+      <div class="researcher-grid" id="researcher-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Researchers</div>
+        <h2 class="section-title">Students &amp; Alumni</h2>
+        <p class="section-desc">Students and alumni form an integral part of the laboratory's research ecosystem, contributing to advances in LiDAR technologies, geospatial science, and interdisciplinary applications.</p>
+      </div>
+      <div class="tabs" id="student-tabs">
+        <button class="tab active" data-tab="phd_current">PhD (Current)</button>
+        <button class="tab" data-tab="mtech_current">M.Tech (Current)</button>
+        <button class="tab" data-tab="btech_current">B.Tech (Current)</button>
+        <button class="tab" data-tab="phd_alumni">PhD Alumni</button>
+        <button class="tab" data-tab="mtech_alumni">M.Tech Alumni</button>
+        <button class="tab" data-tab="btech_alumni">B.Tech Alumni</button>
+      </div>
+      <div class="student-grid" id="student-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <span>© LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.</span>
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+var studentData = {};
+var researcherData = [];
+
+GeoLab.fetchJSON('data/team.json').then(function (data) {
+  renderProfessor(data.professor);
+  
+  researcherData = data.researchers || [];
+  renderResearchers();
+  
+  studentData = data.students || {};
+  initStudentTabs();
+  showStudentTab('phd_current');
+}).catch(function (err) {
+  console.error(err);
+  GeoLab.showError(document.getElementById('student-grid'), 'team information');
+});
+
+// Helper for Initials
+function getInitials(name) {
+  if (!name) return '';
+  var parts = name.split(' ').filter(Boolean);
+  var init = parts[0].charAt(0);
+  if (parts.length > 1) init += parts[parts.length - 1].charAt(0);
+  return init.toUpperCase();
+}
+
+function renderProfessor(prof) {
+  document.getElementById('prof-name').textContent = prof.name;
+  document.getElementById('prof-name-card').textContent = prof.name;
+  document.getElementById('prof-designation').textContent = prof.title + ' · IIT Kanpur';
+  document.getElementById('prof-bio').textContent = prof.bio;
+
+  if (prof.photo && prof.photo.trim() !== "") {
+    document.getElementById('prof-avatar').innerHTML = '<img src="' + GeoLab.escapeHTML(prof.photo) + '" alt="' + GeoLab.escapeHTML(prof.name) + '">';
+  }
+
+  document.getElementById('prof-pills').innerHTML = (prof.fellowships || []).map(function (f) {
+    return '<span class="prof-pill">' + GeoLab.escapeHTML(f) + '</span>';
+  }).join('');
+
+  document.getElementById('prof-contacts').innerHTML =
+    '<a href="mailto:' + prof.email + '">' + GeoLab.svgMail() + GeoLab.escapeHTML(prof.email) + '</a>' +
+    '<a href="tel:' + prof.phone.replace(/[^+\d]/g, '') + '">' + GeoLab.svgPhone() + GeoLab.escapeHTML(prof.phone) + '</a>';
+
+  document.getElementById('prof-education').innerHTML = (prof.education || []).map(function (e) {
+    return '<div class="edu-entry"><div class="edu-dot"></div><div><h4>' + GeoLab.escapeHTML(e.degree) + '</h4><p>' + GeoLab.escapeHTML(e.school) + ' · ' + GeoLab.escapeHTML(e.year) + (e.note ? ' · ' + GeoLab.escapeHTML(e.note) : '') + '</p></div></div>';
+  }).join('');
+
+  document.getElementById('prof-specs').innerHTML = (prof.specializations || []).map(function (s) {
+    return '<span class="tag">' + GeoLab.escapeHTML(s) + '</span>';
+  }).join('');
+}
+
+function generateCardHtml(person, metaText) {
+  var avatar = (person.photo && person.photo.trim() !== '')
+    ? '<img src="' + GeoLab.escapeHTML(person.photo) + '" alt="' + GeoLab.escapeHTML(person.name) + '">'
+    : getInitials(person.name);
+    
+  var metaHtml = metaText ? '<div class="student-meta">' + GeoLab.escapeHTML(metaText) + '</div>' : '';
+  
+  // ADDED: Logic to inject Email, LinkedIn, and Website icons if data exists
+  var linksHtml = '';
+  if (person.email || person.linkedin || person.website) {
+    linksHtml += '<div class="student-links">';
+    if (person.email) {
+      linksHtml += '<a href="mailto:' + GeoLab.escapeHTML(person.email) + '" title="Email"><i class="fas fa-envelope"></i></a>';
+    }
+    if (person.linkedin) {
+      linksHtml += '<a href="' + GeoLab.escapeHTML(person.linkedin) + '" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>';
+    }
+    if (person.website) {
+      linksHtml += '<a href="' + GeoLab.escapeHTML(person.website) + '" target="_blank" title="Personal Website"><i class="fas fa-globe"></i></a>';
+    }
+    linksHtml += '</div>';
+  }
+  
+  return '<div class="student-card">' +
+         '<div class="student-avatar">' + avatar + '</div>' +
+         '<div class="student-info">' +
+           '<div class="student-name">' + GeoLab.escapeHTML(person.name) + '</div>' +
+           '<div class="student-topic">' + GeoLab.escapeHTML(person.topic || person.role || '') + '</div>' +
+           metaHtml +
+           linksHtml + 
+         '</div></div>';
+}
+
+function renderResearchers() {
+  var el = document.getElementById('researcher-grid');
+  if (!researcherData.length) {
+    el.innerHTML = '<p class="section-desc">No active researchers listed at the moment.</p>';
+    return;
+  }
+  el.innerHTML = researcherData.map(function (r) {
+    return generateCardHtml(r, r.role);
+  }).join('');
+}
+
+function initStudentTabs() {
+  document.querySelectorAll('#student-tabs .tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('#student-tabs .tab').forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      showStudentTab(tab.dataset.tab);
+    });
+  });
+}
+
+function showStudentTab(key) {
+  var el = document.getElementById('student-grid');
+  var list = studentData[key] || [];
+  if (!list.length) { 
+      el.innerHTML = '<p style="grid-column: 1/-1; text-align: left; color: var(--muted); padding: 20px 0;">There are currently no members listed in this category.</p>'; 
+      return; 
+  }
+  
+  el.innerHTML = list.map(function (s) {
+    var meta = '';
+    if (key.indexOf('current') > -1) {
+      meta = s.co_guide ? 'Co-guide: ' + s.co_guide : 'Ongoing';
+    } else {
+      meta = 'Class of ' + (s.year || 'Unknown');
+    }
+    return generateCardHtml(s, meta);
+  }).join('');
+}
+
+GeoLab.svgMail = function () { return '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>'; };
+GeoLab.svgPhone = function () { return '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.45 5.45l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'; };
+</script>
+</body>
+</html>

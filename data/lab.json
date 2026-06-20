@@ -1,0 +1,73 @@
+{
+    "description": "Our laboratory pursues advanced research across the entire LiDAR ecosystem, bridging fundamental physics-informed models with national-scale deployment, autonomous vehicle perception, and deep learning.",
+    "stats": [
+      { "value": "25+", "label": "Years of Excellence" },
+      { "value": "100+", "label": "National Projects" },
+      { "value": "2", "label": "Incubated Companies" },
+      { "value": "3", "label": "Patents Awarded" }
+    ],
+    "focus_areas": [
+      {
+        "icon": "car",
+        "title": "Autonomous Systems & Simulation",
+        "description": "Developing platforms like SimDaaS for autonomous vehicle testing. This includes advanced simulation frameworks utilizing physics-informed learning to significantly reduce the sim-to-real gap for LiDAR data simulation and testing."
+      },
+      {
+        "icon": "brain",
+        "title": "Deep Learning & Point Clouds",
+        "description": "Designing advanced 3D CNN architectures for semantic segmentation. We focus on enhancing supervised learning to process complex terrestrial, aerial, and mobile scanning data for feature extraction."
+      },
+      {
+        "icon": "leaf",
+        "title": "Precision Forestry & Hydrology",
+        "description": "Applying LiDAR technology for high-resolution forest characterization, individual tree morphology, species identification, and the precise localization of micro-rainwater harvesting structures."
+      },
+      {
+        "icon": "city",
+        "title": "Digital Twins & Smart Mobility",
+        "description": "Generating high-resolution 3D models and leading initiatives in digital twin benchmarking. We leverage techniques like 3D Gaussian Splatting for neural scene reconstruction and urban informatics."
+      },
+      {
+        "icon": "drone",
+        "title": "UAVs & Cooperative Localization",
+        "description": "Researching the cooperative localization of Unmanned Aerial Vehicles using low-cost GNSS/MEMS sensors and developing robust UAV Traffic Management (UTM) systems for Indian airspace."
+      },
+      {
+        "icon": "industry",
+        "title": "Technology Transfer & Startups",
+        "description": "Translating lab research directly to the national market by incubating companies like Geokno (India's first LiDAR company) and SimDaaS Autonomy."
+      }
+    ],
+    "research_groups": [
+      {
+        "name": "Machine Intelligence & Autonomous Perception",
+        "description": "Focused on physics-aware neural architectures, multi-sensor fusion (camera, LiDAR, radar), and developing robust perception models that bridge simulation environments with real-world complexities."
+      },
+      {
+        "name": "Geospatial AI & Remote Sensing",
+        "description": "Dedicated to deep learning applications for Earth observation, spanning transmission line extraction, tree species identification, and urban feature segmentation from multi-modal sensor fusion."
+      },
+      {
+        "name": "Advanced Topographic Mapping",
+        "description": "Developing methodologies for airborne laser scanning (ALS) and mobile laser scanning (MLS) data acquisition, flight planning optimization, quality control, and developing national BIS standards."
+      },
+      {
+        "name": "Smart Infrastructure & Heritage",
+        "description": "Leveraging terrestrial laser scanning for national-scale infrastructure projects, disaster management mapping, and the digital preservation and 3D documentation of archaeological heritage sites."
+      }
+    ],
+    "research_areas": [
+      "Physics-Informed Deep Learning",
+      "Sim-to-Real Gap Reduction",
+      "Digital Twin Benchmarking",
+      "3D Gaussian Splatting",
+      "LiDAR Intensity Simulation",
+      "Multi-Sensor Fusion",
+      "Autonomous Vehicles",
+      "UAV Traffic Management",
+      "Tree Morphology Extraction",
+      "Semantic Segmentation",
+      "Point Cloud Registration",
+      "Geospatial Intelligence"
+    ]
+  }

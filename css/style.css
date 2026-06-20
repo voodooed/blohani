@@ -1,0 +1,554 @@
+/* ============================================================
+   Geoinformatics Laboratory — IIT Kanpur
+   Shared design system
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+:root {
+
+  --navy:        #213448;
+  --navy-deep:   #18283a;
+  --steel:       #547792;
+  --mist:        #94B4C1;
+  --sand:        #c75b2a;
+
+  --accent:      #5FD3E8;
+
+  --ink:         #16222e;
+  --body:        #465766;
+  --muted:       #768696;
+
+  --line:        #d8e1e8;
+  --line-soft:   #edf2f5;
+
+  --white:       #ffffff;
+  --off-white:   #fafbfd;
+  --paper:       #f4f7f9;
+
+  --navy-05:     rgba(33,52,72,.05);
+  --navy-08:     rgba(33,52,72,.08);
+  --navy-12:     rgba(33,52,72,.12);
+
+  --steel-10:    rgba(84,119,146,.10);
+  --steel-15:    rgba(84,119,146,.15);
+
+  --mist-20:     rgba(148,180,193,.20);
+
+  --ok:          #3f7a5c;
+  --ok-bg:       #e7f1ea;
+
+  --f-display:'Newsreader',Georgia,serif;
+  --f-body:'Inter',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',monospace;
+
+  --r-sm:4px;
+  --r:8px;
+  --r-lg:16px;
+
+  --shadow-sm:0 1px 2px rgba(22,34,46,.06);
+  --shadow:0 4px 16px rgba(22,34,46,.08);
+  --shadow-lg:0 12px 36px rgba(22,34,46,.14);
+
+  --max:1180px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+* , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--f-body);
+  background: var(--paper);
+  color: var(--body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--steel); outline-offset: 3px; border-radius: 2px; }
+
+h1, h2, h3, h4 { font-family: var(--f-display); color: var(--ink); font-weight: 600; }
+
+.mono { font-family: var(--f-mono); }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+/* ============================================================
+   Scan-line texture (signature motif)
+   A thin horizontal sweep + faint point-cloud dot field, used
+   sparingly to evoke an actual LiDAR scan raster rather than
+   generic decoration.
+   ============================================================ */
+.scan-field {
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.10) 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+.scan-sweep {
+  position: absolute; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(234,224,207,0.85), transparent);
+  animation: sweep 6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes sweep {
+  0%   { top: 6%; opacity: 0; }
+  8%   { opacity: 1; }
+  50%  { top: 94%; opacity: 1; }
+  58%  { opacity: 0; }
+  100% { top: 94%; opacity: 0; }
+}
+
+/* ============================================================
+   Top utility bar + Nav
+   ============================================================ */
+.topbar {
+  background: var(--navy-deep);
+  color: rgba(234,224,207,0.75);
+  font-size: 0.78rem;
+  padding: 7px 0;
+}
+.topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+.topbar-tag { letter-spacing: 0.04em; font-family: var(--f-mono); font-size: 0.72rem; color: var(--mist); }
+.topbar a { color: rgba(234,224,207,0.75); text-decoration: none; }
+.topbar a:hover { color: var(--sand); }
+.topbar-links { display: flex; gap: 18px; }
+
+header.site-nav {
+  position: sticky; top: 0; z-index: 200;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.nav-row {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+  gap: 24px;
+}
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; flex-shrink: 0; }
+.brand-mark {
+  width: 42px; height: 42px; flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--steel), var(--navy));
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.brand-mark svg { width: 24px; height: 24px; }
+.brand-text { line-height: 1.25; }
+.brand-text .b1 { font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; color: var(--white); }
+.brand-text .b2 { font-size: 0.7rem; color: var(--mist); letter-spacing: 0.02em; }
+
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links a {
+  font-size: 0.86rem; font-weight: 500; color: rgba(255,255,255,0.72);
+  text-decoration: none; padding: 10px 14px; border-radius: var(--r-sm);
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.07); }
+.nav-links a.active { color: var(--sand); background: rgba(234,224,207,0.08); }
+.nav-cta{
+  background: var(--steel);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .25s ease;
+}
+
+.nav-cta:hover{
+  background: var(--navy);
+  transform: translateY(-2px);
+}
+
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 38px; height: 38px; color: var(--white);
+}
+.nav-toggle svg { width: 24px; height: 24px; }
+
+/* Hide mobile menu globally on desktop */
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  
+  .mobile-menu {
+    /* Base display: none is now handled globally above, 
+       we just define how it should look here */
+    flex-direction: column;
+    background: var(--navy-deep);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 8px 24px 18px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 12px 4px; font-size: 0.95rem; font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .mobile-menu a.active { color: var(--sand); }
+}
+
+/* ============================================================
+   Page header (used on every interior page)
+   ============================================================ */
+.page-header {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--steel) 130%);
+  color: var(--white);
+  padding: 64px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+.page-header .container { position: relative; z-index: 1; }
+.page-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--f-mono); font-size: 0.74rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--sand);
+  margin-bottom: 18px;
+}
+.page-eyebrow::before { content: '◆'; font-size: 0.6rem; color: var(--mist); }
+.page-header h1 {
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  color: var(--white); line-height: 1.15; max-width: 760px; font-weight: 600;
+}
+.page-header p.lead {
+  margin-top: 16px; font-size: 1.05rem; color: rgba(255,255,255,0.78);
+  max-width: 640px; line-height: 1.7;
+}
+.breadcrumb {
+  font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 20px;
+}
+.breadcrumb a { text-decoration: none; color: rgba(255,255,255,0.55); }
+.breadcrumb a:hover { color: var(--sand); }
+
+/* ============================================================
+   Section scaffolding
+   ============================================================ */
+main { display: block; }
+.section { padding: 88px 0; }
+.section.tight { padding: 56px 0; }
+.section.alt { background: var(--white); }
+.section.navy { background: var(--navy); color: rgba(255,255,255,0.82); }
+.section.navy h2 { color: var(--white); }
+.section.sand { background: var(--sand-40); }
+.section-head { margin-bottom: 44px; max-width: 720px; }
+.section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+.kicker {
+  font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--steel); margin-bottom: 12px; font-weight: 500;
+}
+.section.navy .kicker { color: var(--mist); }
+h2.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.15rem); line-height: 1.2; margin-bottom: 12px;
+}
+.section-desc { color: var(--muted); font-size: 1rem; line-height: 1.75; }
+.section.navy .section-desc { color: rgba(255,255,255,0.68); }
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.88rem; font-weight: 600; text-decoration: none;
+  padding: 12px 24px; border-radius: var(--r-sm); border: none; cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s, color 0.15s, border-color .15s;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary{
+  background: var(--steel);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover{
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+.btn-dark { background: var(--navy); color: var(--white); }
+.btn-dark:hover { background: var(--navy-deep); box-shadow: var(--shadow); }
+.btn-outline { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+.btn-outline-dark { background: transparent; color: var(--navy); border: 1.5px solid var(--line); }
+.btn-outline-dark:hover { border-color: var(--steel); background: var(--steel-10); }
+.btn-sm { padding: 8px 16px; font-size: 0.8rem; }
+
+/* ============================================================
+   Stat strip
+   ============================================================ */
+.stat-strip { background: var(--navy-deep); }
+.stat-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  padding: 30px 0;
+}
+.stat-cell { text-align: center; padding: 8px 14px; border-right: 1px solid rgba(255,255,255,0.08); }
+.stat-cell:last-child { border-right: none; }
+.stat-num {
+  font-family: var(--f-display); font-size: 1.9rem; font-weight: 700;
+  color: var(--sand); line-height: 1; margin-bottom: 6px; display: block;
+}
+.stat-label { font-size: 0.7rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.4; }
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card {
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 28px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { border-color: var(--steel); box-shadow: var(--shadow); transform: translateY(-3px); }
+.card-icon {
+  width: 46px; height: 46px; border-radius: var(--r);
+  background: var(--steel-10); display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.card-icon svg { width: 24px; height: 24px; stroke: var(--steel); }
+.card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+.card p { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+/* ============================================================
+   Tags / pills
+   ============================================================ */
+.tag {
+  display: inline-block; background: var(--steel-10); color: var(--navy);
+  border: 1px solid var(--mist-20); border-radius: 100px; padding: 5px 14px;
+  font-size: 0.78rem; font-weight: 500;
+}
+.tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 4px 11px; border-radius: 100px;
+}
+.badge-ongoing { background: var(--ok-bg); color: var(--ok); }
+.badge-completed { background: var(--line-soft); color: var(--muted); }
+.badge-navy { background: var(--navy-08); color: var(--navy); }
+
+/* ============================================================
+   Filter buttons (publications / projects / news)
+   ============================================================ */
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.filter-btn {
+  padding: 7px 16px; border-radius: 100px; font-size: 0.82rem; font-weight: 500;
+  border: 1.5px solid var(--line); background: var(--white); color: var(--muted);
+  cursor: pointer; transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--steel); color: var(--navy); }
+.filter-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* ============================================================
+   List rows (publications, awards, news)
+   ============================================================ */
+.row-list { display: flex; flex-direction: column; gap: 14px; }
+.row-item {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--r);
+  padding: 22px 26px; display: flex; gap: 22px; transition: border-color 0.2s, box-shadow .2s;
+}
+.row-item:hover { border-color: var(--steel); box-shadow: var(--shadow-sm); }
+.row-year {
+  flex-shrink: 0; font-family: var(--f-mono); font-size: 0.95rem; font-weight: 600;
+  color: var(--steel); width: 56px; padding-top: 2px;
+}
+.row-title { font-weight: 600; font-size: 0.95rem; color: var(--ink); margin-bottom: 6px; line-height: 1.5; }
+.row-meta { font-size: 0.82rem; color: var(--muted); }
+.row-meta .sep { margin: 0 6px; color: var(--line); }
+.row-link { color: var(--steel); font-weight: 500; text-decoration: none; }
+.row-link:hover { text-decoration: underline; }
+
+.more-btn {
+  display: block; margin: 24px auto 0; background: none; border: 1.5px solid var(--line);
+  color: var(--muted); border-radius: var(--r-sm); padding: 10px 26px; cursor: pointer;
+  font-size: 0.85rem; font-weight: 600; transition: all 0.15s;
+}
+.more-btn:hover { border-color: var(--steel); color: var(--navy); }
+
+/* ============================================================
+   Tabs (team page)
+   ============================================================ */
+.tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin-bottom: 36px; flex-wrap: wrap; }
+.tab {
+  padding: 11px 20px; font-size: 0.86rem; font-weight: 600; color: var(--muted);
+  cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px;
+  background: none; border-top: none; border-left: none; border-right: none; transition: all 0.15s;
+}
+.tab:hover { color: var(--navy); }
+.tab.active { color: var(--navy); border-bottom-color: var(--steel); }
+
+/* ============================================================
+   Empty / loading state
+   ============================================================ */
+.empty-state {
+  text-align: center; padding: 48px 24px; color: var(--muted);
+  border: 1.5px dashed var(--line); border-radius: var(--r-lg); font-size: 0.9rem;
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--line-soft) 25%, var(--line) 37%, var(--line-soft) 63%);
+  background-size: 400% 100%; animation: shimmer 1.4s ease infinite; border-radius: var(--r);
+}
+@keyframes shimmer { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
+
+/* ============================================================
+   Footer
+   ============================================================ */
+footer.site-footer { background: var(--navy-deep); color: rgba(255,255,255,0.55); }
+.footer-top { padding: 64px 0 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
+.footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.footer-brand .brand-text .b1 { color: var(--white); }
+.footer-col h4 {
+  color: rgba(255,255,255,0.85); font-size: 0.78rem; text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 16px; font-weight: 600;
+}
+.footer-col a, .footer-col p { display: block; color: rgba(255,255,255,0.5); text-decoration: none; margin-bottom: 9px; font-size: 0.86rem; line-height: 1.6; }
+.footer-col a:hover { color: var(--sand); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08); padding: 22px 0;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+  font-size: 0.78rem; color: rgba(255,255,255,0.35);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 980px) {
+  .grid-3, .grid-2, .grid-4 { grid-template-columns: 1fr 1fr; }
+  .stat-grid { grid-template-columns: repeat(3, 1fr); }
+  .stat-cell:nth-child(3) { border-right: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .topbar-links { gap: 12px; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+  .grid-3, .grid-2, .grid-4 { grid-template-columns: 1fr; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr); padding: 22px 0; }
+  .stat-cell:nth-child(2n+1) { border-right: 1px solid rgba(255,255,255,0.08); }
+  .stat-cell:nth-child(2n) { border-right: none; }
+  .section { padding: 56px 0; }
+  .page-header { padding: 48px 0 40px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; }
+  .row-item { flex-direction: column; gap: 6px; }
+  .row-year { width: auto; }
+}
+
+/* ============================================================
+   Background Video Section
+   ============================================================ */
+   .has-bg-video {
+    position: relative;
+    overflow: hidden;
+    /* Removes default background so video shows through */
+    background: transparent; 
+    /* Add this to your .has-bg-video block or under it */
+    .has-bg-video .section-title,
+    .has-bg-video .section-desc,
+    .has-bg-video .mission-quote p,
+    .has-bg-video .mission-quote cite {
+      /* This creates a subtle dark glow behind text for contrast */
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Make the quote box slightly more transparent to let more video through */
+    .has-bg-video .mission-quote {
+      background: rgba(0, 0, 0, 0.3); 
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+  }
+  
+  /* Forces the video to cover the entire section seamlessly */
+  .bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Subtle dark overlay so the text remains highly readable */
+  .bg-overlay {
+    position: absolute;
+    inset: 0;
+    /* Reduced from 0.82 to 0.5 for more video visibility */
+    background: var(--navy-deep);
+    opacity: 0.5; 
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .content-front {
+    background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, transparent 70%);
+ }
+  
+  /* Pull the text and grid forward */
+  .has-bg-video .content-front {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Override text colors for this dark section to ensure contrast */
+  .has-bg-video .section-title {
+    color: var(--white);
+  }
+  .has-bg-video .kicker {
+    color: var(--mist);
+  }
+  .has-bg-video .section-desc {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  /* Give the quote box a modern frosted-glass look over the video */
+  .has-bg-video .mission-quote {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 4px solid var(--steel);
+    color: var(--white);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .has-bg-video .mission-quote cite {
+    color: var(--mist);
+  }
+
+  .footer-credit{
+    font-size:0.75rem;
+}
+
+.developer-link{
+    color:#94B4C1;
+    font-size:0.95rem;
+    font-weight:700;
+    text-decoration:none;
+    margin-left:4px;
+    transition:all 0.3s ease;
+    position:relative;
+}
+
+.developer-link:hover{
+    color:#EAE0CF;
+    text-shadow:
+        0 0 8px rgba(148,180,193,0.6),
+        0 0 16px rgba(148,180,193,0.3);
+}
+
+.developer-link::after{
+    content:" ↗";
+    font-size:0.9rem;
+    opacity:0.8;
+}

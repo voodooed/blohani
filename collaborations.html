@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collaborations — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Industry, government, and academic collaborators of the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+  .collab-card { display: flex; gap: 18px; align-items: flex-start; padding: 24px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); transition: border-color .2s, box-shadow .2s; height: 100%;}
+  .collab-card:hover { border-color: var(--steel); box-shadow: var(--shadow); }
+  .collab-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: var(--r); background: var(--steel-10); display: flex; align-items: center; justify-content: center; }
+  .collab-icon svg { width: 22px; height: 22px; stroke: var(--steel); }
+  .collab-content { flex: 1; }
+  .collab-title-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;}
+  .collab-card h3 { font-size: 1.1rem; color: var(--ink); margin: 0; }
+  .collab-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+  
+  /* Styling for specific collaborator names and links */
+  .collab-persons { border-top: 1px solid var(--line-soft); padding-top: 12px; margin-top: auto; }
+  .collab-person { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--navy); font-weight: 500; background: rgba(0, 0, 0, 0.03); padding: 4px 10px; border-radius: 4px; margin-right: 8px; margin-bottom: 8px; text-decoration: none; transition: background 0.2s;}
+  .collab-person:hover { background: rgba(0, 0, 0, 0.08); }
+  .org-link { color: var(--steel); transition: color 0.2s; font-size: 1.1rem; }
+  .org-link:hover { color: var(--navy); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">Collaborations</div>
+      <h1>Industry, Government &amp; Academic Partners</h1>
+      <p class="lead">Queries on LiDAR in India regularly converge at this lab — these are the organisations we work alongside.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Government &amp; Public Sector</div>
+        <h2 class="section-title">Government Agencies</h2>
+        <p class="section-desc">National missions, departments, and statutory bodies the lab has supported with LiDAR survey and mapping expertise.</p>
+      </div>
+      <div class="grid-2" id="government-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Industry</div>
+        <h2 class="section-title">Industry Partners</h2>
+        <p class="section-desc">Companies engaged in consulting, technology transfer, or joint development with the lab.</p>
+      </div>
+      <div class="grid-2" id="industry-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Academic</div>
+        <h2 class="section-title">Academic Collaborators</h2>
+        <p class="section-desc">International universities and institutes co-supervising research and co-authoring publications.</p>
+      </div>
+      <div class="grid-2" id="academic-grid"></div>
+    </div>
+  </section>
+
+  <section class="section navy">
+    <div class="container">
+      <div class="cta-band" style="background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+        <div>
+          <h2 style="color:#fff;font-size:1.5rem;">Want to collaborate with the lab?</h2>
+          <p style="color:rgba(255,255,255,0.65);margin-top:6px;">Whether it's a joint research proposal, a consulting engagement, or a data partnership — let's talk.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+GeoLab.fetchJSON('data/collaborations.json').then(function (data) {
+  // We wrap the cards in a div with display:flex so they stretch to the same height.
+  renderCollabs('government-grid', data.government, 'landmark');
+  renderCollabs('industry-grid', data.industry, 'building-2');
+  renderCollabs('academic-grid', data.academic, 'file-check');
+}).catch(function () {
+  ['government-grid','industry-grid','academic-grid'].forEach(function (id) {
+    GeoLab.showError(document.getElementById(id), 'collaborations');
+  });
+});
+
+function renderCollabs(elId, items, icon) {
+  var el = document.getElementById(elId);
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No entries yet in this category.'); return; }
+  
+  el.innerHTML = items.map(function (c) {
+    var orgLink = c.link ? '<a href="' + GeoLab.escapeHTML(c.link) + '" target="_blank" class="org-link"><i class="fas fa-external-link-alt"></i></a>' : '';
+    
+    var personsHtml = '';
+    if (c.persons && c.persons.length > 0) {
+      personsHtml = '<div class="collab-persons">' + c.persons.map(function(p) {
+        if (p.link) {
+          return '<a href="' + GeoLab.escapeHTML(p.link) + '" target="_blank" class="collab-person"><i class="fas fa-user-circle"></i> ' + GeoLab.escapeHTML(p.name) + '</a>';
+        } else {
+          return '<span class="collab-person"><i class="fas fa-user-circle"></i> ' + GeoLab.escapeHTML(p.name) + '</span>';
+        }
+      }).join('') + '</div>';
+    }
+
+    return '<div style="display:flex; flex-direction:column;">' +
+             '<div class="collab-card">' +
+               '<div class="collab-icon">' + GeoLab.svgIcon(icon) + '</div>' +
+               '<div class="collab-content">' +
+                 '<div class="collab-title-row">' +
+                   '<h3>' + GeoLab.escapeHTML(c.name) + '</h3>' +
+                   orgLink +
+                 '</div>' +
+                 '<p class="collab-desc">' + GeoLab.escapeHTML(c.description) + '</p>' +
+                 personsHtml +
+               '</div>' +
+             '</div>' +
+           '</div>';
+  }).join('');
+}
+</script>
+</body>
+</html>

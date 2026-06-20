@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LiDAR@Geoinformatics Laboratory | Department of Civil Engineering | IIT Kanpur</title>
+<meta name="description" content="LiDAR@Geoinformatics Laboratory is a research group within the Geoinformatics Specialization, IIT Kanpur, advancing research in LiDAR sensing, geospatial science, point cloud analytics, mapping, digital twins, and spatial intelligence applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* ── Home-only styles ── */
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--steel) 140%);
+    color: var(--white); position: relative; overflow: hidden;
+    padding: 96px 0 80px;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 760px; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 9px;
+    background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 100px; padding: 6px 16px;
+    font-family: var(--f-mono); font-size: 0.74rem; letter-spacing: 0.04em;
+    color: var(--sand); margin-bottom: 28px;
+  }
+  .hero-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sand); flex-shrink: 0; }
+  .hero h1 {
+    font-size: clamp(2.3rem, 5vw, 3.7rem); font-weight: 600; line-height: 1.1;
+    color: var(--white); margin-bottom: 22px;
+  }
+  .hero h1 .accent { color: var(--sand); font-style: italic; }
+  .hero-sub {
+    font-size: 1.1rem; color: rgba(255,255,255,0.82); line-height: 1.7;
+    max-width: 600px; margin-bottom: 18px;
+  }
+  .hero-tagline2 {
+    font-size: 0.98rem; color: rgba(255,255,255,0.65); line-height: 1.75;
+    max-width: 640px; margin-bottom: 40px;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-side {
+    position: absolute; right: 0; top: 0; bottom: 0; width: 46%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  @media (max-width: 980px) { .hero-side { display: none; } }
+
+  /* ── LiDAR scanner visual ── */
+  .lidar-wrap { position: relative; width: 380px; max-width: 100%; }
+  .lidar-svg { width: 100%; height: auto; display: block; overflow: visible; }
+
+  .lidar-sensor-body { fill: var(--navy-deep); stroke: rgba(234,224,207,0.55); stroke-width: 1; }
+  .lidar-sensor-lens { fill: var(--sand); }
+  .lidar-mast { stroke: rgba(234,224,207,0.35); stroke-width: 1.5; }
+
+  .lidar-beam {
+    stroke: var(--sand);
+    stroke-width: 1.1;
+    stroke-linecap: round;
+    transform-origin: 183px 51px;
+    opacity: 0;
+    animation: beamFire 2.4s ease-in-out infinite;
+  }
+  .lidar-beam:nth-child(1) { animation-delay: 0s; }
+  .lidar-beam:nth-child(2) { animation-delay: 0.12s; }
+  .lidar-beam:nth-child(3) { animation-delay: 0.24s; }
+  .lidar-beam:nth-child(4) { animation-delay: 0.36s; }
+  .lidar-beam:nth-child(5) { animation-delay: 0.48s; }
+  .lidar-beam:nth-child(6) { animation-delay: 0.60s; }
+  .lidar-beam:nth-child(7) { animation-delay: 0.72s; }
+  .lidar-beam:nth-child(8)  { animation-delay: 0.84s; }
+  .lidar-beam:nth-child(9)  { animation-delay: 0.96s; }
+  .lidar-beam:nth-child(10) { animation-delay: 1.08s; }
+  .lidar-beam:nth-child(11) { animation-delay: 1.20s; }
+  .lidar-beam:nth-child(12) { animation-delay: 1.32s; }
+  .lidar-beam:nth-child(13) { animation-delay: 1.44s; }
+  .lidar-beam:nth-child(14) { animation-delay: 1.56s; }
+  .lidar-beam:nth-child(15) { animation-delay: 1.68s; }
+  .lidar-beam:nth-child(16) { animation-delay: 1.80s; }
+  .lidar-beam:nth-child(17) { animation-delay: 1.92s; }
+  .lidar-beam:nth-child(18) { animation-delay: 2.04s; }
+  .lidar-beam:nth-child(19) { animation-delay: 2.16s; }
+  .lidar-beam:nth-child(20) { animation-delay: 2.28s; }
+  .lidar-beam:nth-child(21) { animation-delay: 2.40s; }
+  .lidar-beam:nth-child(22) { animation-delay: 2.52s; }
+  .lidar-beam:nth-child(23) { animation-delay: 2.64s; }
+  .lidar-beam:nth-child(24) { animation-delay: 2.76s; }
+  .lidar-beam:nth-child(25) { animation-delay: 2.88s; }
+  .lidar-beam:nth-child(26) { animation-delay: 3.00s; }
+  .lidar-beam:nth-child(27) { animation-delay: 3.12s; }
+  .lidar-beam:nth-child(28) { animation-delay: 3.24s; }
+  .lidar-beam:nth-child(29) { animation-delay: 3.36s; }
+  .lidar-beam:nth-child(30) { animation-delay: 3.48s; }
+  .lidar-beam:nth-child(31) { animation-delay: 3.60s; }
+  .lidar-beam:nth-child(32) { animation-delay: 3.72s; }
+  .lidar-beam:nth-child(33) { animation-delay: 3.84s; }
+  .lidar-beam:nth-child(34) { animation-delay: 3.96s; }
+  .lidar-beam:nth-child(35) { animation-delay: 4.08s; }
+  .lidar-beam:nth-child(36) { animation-delay: 4.20s; }
+  @keyframes beamFire {
+    0%   { opacity: 0; }
+    6%   { opacity: 0.95; }
+    28%  { opacity: 0.55; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  .lidar-return {
+    fill: var(--mist);
+    opacity: 0;
+    animation: returnPing 2.4s ease-in-out infinite;
+  }
+  @keyframes returnPing {
+    0%   { opacity: 0; r: 1.4; }
+    32%  { opacity: 0; }
+    38%  { opacity: 1; r: 2.6; }
+    55%  { opacity: 0.9; r: 1.8; }
+    75%  { opacity: 0; r: 1.8; }
+    100% { opacity: 0; }
+  }
+
+  .lidar-terrain { fill: none; stroke: rgba(234,224,207,0.3); stroke-width: 1.2; }
+  .lidar-point { fill: rgba(234,224,207,0.55); }
+  .lidar-point.bright { fill: var(--mist); }
+
+  .lidar-caption {
+    margin-top: 18px; text-align: center;
+    font-family: var(--f-mono); font-size: 0.7rem; color: rgba(255,255,255,0.45);
+    letter-spacing: 0.03em;
+  }
+  .lidar-caption .sep { margin: 0 8px; color: rgba(255,255,255,0.25); }
+
+  /* Mission */
+  .mission-quote {
+    background: var(--white); border: 1px solid var(--line); border-left: 4px solid var(--steel);
+    border-radius: var(--r); padding: 32px 36px; font-family: var(--f-display);
+    font-size: 1.2rem; font-style: italic; color: var(--ink); line-height: 1.6;
+  }
+  .mission-quote cite { display: block; margin-top: 16px; font-family: var(--f-body); font-style: normal; font-size: 0.8rem; color: var(--muted); }
+
+  /* Why unique */
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .why-card { text-align: left; }
+  .why-num { font-family: var(--f-mono); font-size: 0.78rem; color: var(--mist); margin-bottom: 14px; }
+
+  /* Featured projects strip */
+  .feat-projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .feat-card {
+    background: var(--navy); color: rgba(255,255,255,0.85); border-radius: var(--r-lg);
+    padding: 26px; border: 1px solid rgba(255,255,255,0.08);
+  }
+  .feat-card .ftag { font-family: var(--f-mono); font-size: 0.7rem; color: var(--mist); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+  .feat-card h3 { color: var(--white); font-size: 0.98rem; margin-bottom: 10px; line-height: 1.5; }
+  .feat-card p { font-size: 0.84rem; color: rgba(255,255,255,0.6); }
+
+  /* CTA band */
+  .cta-band {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--white); border-radius: var(--r-lg); padding: 56px 56px;
+    display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+  }
+  .cta-band h2 { color: var(--white); font-size: 1.7rem; max-width: 480px; }
+  .cta-band p { color: rgba(255,255,255,0.7); margin-top: 8px; max-width: 460px; }
+
+  @media (max-width: 980px) {
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    .feat-projects { grid-template-columns: 1fr; }
+    .cta-band { padding: 40px 28px; flex-direction: column; text-align: left; }
+  }
+  @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">LiDAR@Geoinformatics Laboratory · DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">LiDAR@Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="scan-field"></div>
+    <div class="scan-sweep"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          LiDAR@Geoinformatics Laboratory • IIT Kanpur
+        </div>
+        <h1>
+        Advancing Research and Innovation in
+        <span class="accent">LiDAR Technologies</span>
+        </h1>
+        <p class="hero-sub">
+        For more than two decades, the LiDAR@Geoinformatics Laboratory at IIT Kanpur has conducted research in LiDAR sensing, point cloud processing, mapping, simulation, geospatial intelligence, and emerging applications of laser scanning technologies.
+        </p>
+        <p class="hero-tagline2">
+        Our work spans airborne, mobile, and terrestrial laser scanning, supporting advances in geospatial science, infrastructure monitoring, environmental studies, autonomous systems, digital twins, and next-generation spatial intelligence.
+        </p>
+        <div class="hero-ctas">
+          <a href="research.html" class="nav-cta">
+            Explore Our Research
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            Contact Us
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="hero-side">
+      <div class="lidar-wrap">
+        <svg class="lidar-svg" viewBox="0 0 380 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- aircraft carrying the sensor -->
+          <g class="lidar-aircraft">
+            <!-- fuselage -->
+            <path d="M132,40 C132,37 135,35 139,35 L226,35 C231,35 235,37 238,40 L235,43 C232,41.5 228,40.5 224,40.5 L146,40.5 C142,40.5 138,41.5 135,43 Z" fill="var(--navy-deep)" stroke="rgba(234,224,207,0.55)" stroke-width="1"/>
+            <!-- nose taper -->
+            <path d="M132,40 C129,40.3 126,41 124,42.2 L124,43.5 C126,42.6 129,42 132,41.7 Z" fill="var(--navy-deep)" stroke="rgba(234,224,207,0.55)" stroke-width="1"/>
+            <!-- tail fin -->
+            <path d="M226,35.5 L240,26 L243,26.4 L233,40 Z" fill="var(--navy-deep)" stroke="rgba(234,224,207,0.55)" stroke-width="1"/>
+            <!-- main wing -->
+            <path d="M158,41.5 L120,58 L120,61 L160,46.5 Z" fill="var(--navy-deep)" stroke="rgba(234,224,207,0.55)" stroke-width="1"/>
+            <path d="M158,41.5 L201,58 L201,61 L160,46.5 Z" fill="var(--navy-deep)" stroke="rgba(234,224,207,0.55)" stroke-width="1"/>
+            <!-- belly-mounted sensor pod -->
+            <rect class="lidar-sensor-body" x="174" y="40" width="18" height="11" rx="3"/>
+            <circle class="lidar-sensor-lens" cx="183" cy="51" r="3.2"/>
+          </g>
+          <!-- flight path trail -->
+          <path d="M40,33 C90,30 280,30 340,33" fill="none" stroke="rgba(234,224,207,0.18)" stroke-width="1" stroke-dasharray="1 5"/>
+
+          <!-- ground / terrain silhouette receiving the scan -->
+          <path class="lidar-terrain" d="M10,238 L70,238 L100,206 L130,238 L168,238 L182,176 L196,238 L240,238 L262,214 L284,238 L370,238"/>
+
+          <!-- a small tree + building hinted on terrain for context -->
+          <line x1="262" y1="214" x2="262" y2="238" stroke="rgba(234,224,207,0.3)" stroke-width="1.2"/>
+          <rect x="96" y="206" width="8" height="32" fill="none" stroke="rgba(234,224,207,0.22)" stroke-width="1"/>
+
+          <!-- fan of laser pulses, sweeping left to right across the swath -->
+          <g>
+            <line class="lidar-beam" x1="183" y1="51" x2="70" y2="238"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="100" y2="206"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="130" y2="238"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="182" y2="176"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="240" y2="238"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="262" y2="214"/>
+            <line class="lidar-beam" x1="183" y1="51" x2="310" y2="238"/>
+          </g>
+
+          <!-- return pulses where beams strike the surface -->
+          <g>
+            <circle class="lidar-return" cx="70" cy="238" r="1.8" style="animation-delay:0s"/>
+            <circle class="lidar-return" cx="100" cy="206" r="1.8" style="animation-delay:0.12s"/>
+            <circle class="lidar-return" cx="130" cy="238" r="1.8" style="animation-delay:0.24s"/>
+            <circle class="lidar-return" cx="182" cy="176" r="1.8" style="animation-delay:0.36s"/>
+            <circle class="lidar-return" cx="240" cy="238" r="1.8" style="animation-delay:0.48s"/>
+            <circle class="lidar-return" cx="262" cy="214" r="1.8" style="animation-delay:0.60s"/>
+            <circle class="lidar-return" cx="310" cy="238" r="1.8" style="animation-delay:0.72s"/>
+          </g>
+
+          <!-- accumulated point cloud along the terrain, built from prior passes -->
+          <g>
+            <circle class="lidar-point" cx="22" cy="237" r="1.3"/>
+            <circle class="lidar-point" cx="40" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="58" cy="238" r="1.3"/>
+            <circle class="lidar-point bright" cx="78" cy="232" r="1.3"/>
+            <circle class="lidar-point" cx="88" cy="218" r="1.3"/>
+            <circle class="lidar-point bright" cx="106" cy="208" r="1.3"/>
+            <circle class="lidar-point" cx="116" cy="222" r="1.3"/>
+            <circle class="lidar-point" cx="142" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="158" cy="238" r="1.3"/>
+            <circle class="lidar-point bright" cx="176" cy="190" r="1.3"/>
+            <circle class="lidar-point" cx="188" cy="178" r="1.3"/>
+            <circle class="lidar-point" cx="204" cy="200" r="1.3"/>
+            <circle class="lidar-point" cx="220" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="248" cy="232" r="1.3"/>
+            <circle class="lidar-point bright" cx="268" cy="216" r="1.3"/>
+            <circle class="lidar-point" cx="290" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="318" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="336" cy="238" r="1.3"/>
+            <circle class="lidar-point" cx="354" cy="238" r="1.3"/>
+          </g>
+        </svg>
+        <div class="lidar-caption">PULSE RATE 300 kHz<span class="sep">·</span>Δt ≈ 6.7 ns&nbsp;/&nbsp;m</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stat-strip">
+    <div class="container">
+      <div class="stat-grid" id="stats-strip">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section class="section has-bg-video">
+    <video class="bg-video" autoplay loop muted playsinline>
+      <source src="css/vid.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+
+    <div class="container content-front">
+      <div class="grid-2" style="align-items:center; gap:56px;">
+        <div>
+          <div class="kicker">Our Mandate</div>
+          <h2 class="section-title"> Advancing LiDAR Research Through Innovation, Collaboration, and Impact </h2>
+          <p class="section-desc" style="margin-bottom:22px;"> Established at IIT Kanpur, the LiDAR@Geoinformatics Laboratory has been actively engaged in the development and application of LiDAR technologies across a wide range of domains. Over the years, the laboratory has contributed to advances in laser scanning, point cloud analytics, geospatial intelligence, and emerging sensing technologies through research, education, and field deployments. </p>
+          <p class="section-desc" id="lab-desc"></p>
+        </div>
+        <div class="mission-quote">
+          <p class="section-desc"> This group brings together expertise spanning airborne, mobile, and terrestrial LiDAR systems, supporting interdisciplinary work in mapping, infrastructure assessment, environmental monitoring, digital twins, autonomous systems, and next-generation geospatial applications. </p>
+          <cite>— Dr. Bharat Lohani, Principal Investigator</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY UNIQUE -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head center">
+        <div class="kicker">Laboratory Highlights</div>
+        <h2 class="section-title">A Legacy of Research, Innovation, and Impact</h2>
+        <p class="section-desc">Through sustained contributions to LiDAR science and geospatial technologies, the Geoinformatics Laboratory has advanced research, education, technology development, and real-world applications across diverse domains.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01 / Depth</div>
+          <h3 style="font-size:0.98rem;margin-bottom:8px;">25+ Years of Focus</h3>
+          <p style="font-size:0.86rem;color:var(--muted);line-height:1.6;">Sustained LiDAR research since long before the technology was mainstream in India.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02 / Breadth</div>
+          <h3 style="font-size:0.98rem;margin-bottom:8px;">Full-Spectrum Coverage</h3>
+          <p style="font-size:0.86rem;color:var(--muted);line-height:1.6;">Airborne, mobile, and terrestrial scanning; sensors through to AI and applications.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03 / Proof</div>
+          <h3 style="font-size:0.98rem;margin-bottom:8px;">National-Scale Track Record</h3>
+          <p style="font-size:0.86rem;color:var(--muted);line-height:1.6;">From the Bullet Train project to Ganga river mapping — real deployments, real scale.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04 / Transfer</div>
+          <h3 style="font-size:0.98rem;margin-bottom:8px;">Research to Enterprise</h3>
+          <p style="font-size:0.86rem;color:var(--muted);line-height:1.6;">Two IIT Kanpur-incubated companies translating lab research into industry products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH HIGHLIGHTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Research Focus</div>
+        <h2 class="section-title">Research Highlights</h2>
+        <p class="section-desc">Six areas that together make the lab a complete LiDAR ecosystem — from sensors and simulation to applications and AI.</p>
+      </div>
+      <div class="grid-3" id="focus-grid">
+        <!-- populated by JS -->
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <a href="research.html" class="btn btn-outline-dark">View All Research Areas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Sponsored Research</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Highlighting high-impact research and national-scale deployments sponsored by leading government and industry partners.</p>
+      </div>
+      <div class="feat-projects" id="feat-projects">
+        </div>
+      <div style="text-align:center;margin-top:36px;">
+        <a href="projects.html" class="btn btn-outline-dark">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATIONS STRIP -->
+  <section class="section navy">
+    <div class="container">
+        <div class="section-head center">
+            <div class="kicker">Collaborations & Partnerships</div>
+            <h2 class="section-title">
+                Academic, Industry, and Government Engagement
+            </h2>
+            <p class="section-desc">
+              Research at our lab is strengthened through collaborations with universities, government organizations, research institutes, and industry partners working at the forefront of geospatial technologies and LiDAR applications.
+            </p>
+        </div>
+        <div class="tag-row" id="collab-tags" style="justify-content:center;">
+            <!-- populated by JS -->
+        </div>
+    </div>
+</section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+        <div class="cta-band">
+            <div>
+                <h2>
+                    Let's Advance LiDAR Research Together
+                </h2>
+                <p>
+                    Whether you are a researcher, student, industry professional, or government organization, we welcome opportunities to explore collaborative research, innovation, and real-world applications of LiDAR technologies.
+                </p>
+            </div>
+            <a href="contact.html" class="nav-cta">
+                Connect With Us
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+GeoLab.fetchJSON('data/lab.json').then(function (lab) {
+  document.getElementById('lab-desc').textContent = lab.description;
+  renderStats(lab.stats);
+  renderFocusAreas(lab.focus_areas);
+}).catch(function () {
+  GeoLab.showError(document.getElementById('focus-grid'), 'research focus areas');
+});
+
+GeoLab.fetchJSON('data/projects.json').then(function (data) {
+  renderFeaturedProjects(data.projects);
+}).catch(function () {
+  GeoLab.showError(document.getElementById('feat-projects'), 'featured projects');
+});
+
+GeoLab.fetchJSON('data/collaborations.json').then(function (data) {
+  renderCollabTags(data);
+}).catch(function () {
+  GeoLab.showError(document.getElementById('collab-tags'), 'collaborations');
+});
+
+function renderStats(stats) {
+  document.getElementById('stats-strip').innerHTML = stats.map(function (s) {
+    return '<div class="stat-cell"><span class="stat-num">' + GeoLab.escapeHTML(s.value) + '</span><span class="stat-label">' + GeoLab.escapeHTML(s.label) + '</span></div>';
+  }).join('');
+}
+
+function renderFocusAreas(areas) {
+  document.getElementById('focus-grid').innerHTML = areas.map(function (a) {
+    return '<div class="card"><div class="card-icon">' + GeoLab.svgIcon(a.icon) + '</div><h3>' + GeoLab.escapeHTML(a.title) + '</h3><p>' + GeoLab.escapeHTML(a.description) + '</p></div>';
+  }).join('');
+}
+
+function renderFeaturedProjects(projects) {
+  // 1. Grab all ongoing projects
+  var featured = projects.filter(function (p) { return p.status === 'ongoing'; });
+  
+  // 2. If we have fewer than 6 ongoing, fill the rest with completed projects
+  if (featured.length < 6) {
+    var completed = projects.filter(function (p) { return p.status !== 'ongoing'; });
+    featured = featured.concat(completed.slice(0, 6 - featured.length));
+  } else {
+    // Cap at 6 if there are tons of ongoing ones
+    featured = featured.slice(0, 6);
+  }
+
+  // 3. Render the HTML
+  document.getElementById('feat-projects').innerHTML = featured.map(function (p) {
+    // Create a slick neon badge for ongoing projects
+    var statusBadge = p.status === 'ongoing' 
+        ? '<span style="color: #00e5ff; border: 1px solid rgba(0, 229, 255, 0.5); padding: 2px 6px; border-radius: 4px; font-size: 0.6rem; margin-left: 8px; vertical-align: middle;">ONGOING</span>' 
+        : '';
+
+    return `
+      <div class="feat-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="ftag" style="display: flex; align-items: center; margin-bottom: 12px;">
+            ${GeoLab.escapeHTML(p.sponsor)} · ${GeoLab.escapeHTML(p.period)} ${statusBadge}
+          </span>
+          <h3 style="margin-bottom: 16px;">${GeoLab.escapeHTML(p.title)}</h3>
+        </div>
+        <p style="font-family: var(--f-mono); color: var(--sand); font-weight: 600;">${GeoLab.escapeHTML(p.amount)}</p>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderCollabTags(data) {
+  var all = [].concat(data.government || [], data.industry || [], data.academic || []);
+  document.getElementById('collab-tags').innerHTML = all.map(function (c) {
+    return '<span class="tag" style="background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.18);">' + GeoLab.escapeHTML(c.name) + '</span>';
+  }).join('');
+}
+</script>
+</body>
+</html>

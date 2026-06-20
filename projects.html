@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Ongoing, completed, and sponsored LiDAR research projects at the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .project-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 26px; position: relative; transition: border-color .2s, box-shadow .2s; }
+  .project-card:hover { border-color: var(--steel); box-shadow: var(--shadow); }
+  .project-card.ongoing { border-left: 4px solid var(--ok); }
+  .project-card.completed { border-left: 4px solid var(--line); }
+  .project-title { font-size: 0.95rem; font-weight: 600; color: var(--ink); margin: 12px 0 14px; line-height: 1.5; }
+  .project-meta { display: flex; gap: 18px; flex-wrap: wrap; }
+  .project-meta span { font-size: 0.8rem; color: var(--muted); }
+  .project-meta strong { color: var(--navy); }
+  .impact-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+  .impact-item { display: flex; gap: 12px; align-items: flex-start; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--r); padding: 14px 16px; }
+  .impact-bullet { width: 7px; height: 7px; background: var(--sand); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+  .impact-item span { font-size: 0.86rem; color: rgba(255,255,255,0.82); line-height: 1.55; }
+  .companies-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
+  .company-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; transition: border-color .2s, box-shadow .2s; }
+  .company-card:hover { border-color: var(--steel); box-shadow: var(--shadow); }
+  .company-name { font-family: var(--f-display); font-size: 1.15rem; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .company-meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 14px; }
+  .company-desc { font-size: 0.88rem; color: var(--body); line-height: 1.65; margin-bottom: 16px; }
+  @media (max-width: 980px) { .impact-grid, .companies-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">Projects</div>
+      <h1>Sponsored &amp; Applied Projects</h1>
+      <p class="lead">Government and industry-funded work that takes LiDAR research from the lab into national infrastructure, environment, and defence applications.</p>
+    </div>
+  </div>
+
+  <!-- PROJECTS LIST -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Sponsored Research</div>
+        <h2 class="section-title">Ongoing &amp; Completed Projects</h2>
+        <p class="section-desc">Filter by status to see current commitments or past delivered work.</p>
+      </div>
+      <div class="filter-row" id="project-filter"></div>
+      <div class="grid-2" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- NATIONAL IMPACT -->
+  <section class="section navy">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">National Impact</div>
+        <h2 class="section-title">LiDAR at Work Across India</h2>
+        <p class="section-desc">Technologies and methods from this lab have powered some of India's most significant infrastructure and environmental projects.</p>
+      </div>
+      <div class="impact-grid" id="impact-grid"></div>
+    </div>
+  </section>
+
+  <!-- COMPANIES -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Technology Transfer</div>
+        <h2 class="section-title">Companies Founded</h2>
+        <p class="section-desc">Translating lab research into enterprise through IIT Kanpur's incubation ecosystem.</p>
+      </div>
+      <div class="companies-grid" id="companies-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+var allProjects = [];
+
+GeoLab.fetchJSON('data/projects.json').then(function (data) {
+  allProjects = data.projects;
+  renderFilters();
+  renderProjects(allProjects);
+  renderImpact(data.impact_projects);
+  renderCompanies(data.companies);
+}).catch(function () {
+  GeoLab.showError(document.getElementById('projects-grid'), 'projects');
+  GeoLab.showError(document.getElementById('impact-grid'), 'impact projects');
+  GeoLab.showError(document.getElementById('companies-grid'), 'companies');
+});
+
+function renderFilters() {
+  var el = document.getElementById('project-filter');
+  el.innerHTML = '<button class="filter-btn active" data-status="all">All</button>' +
+    '<button class="filter-btn" data-status="ongoing">Ongoing</button>' +
+    '<button class="filter-btn" data-status="completed">Completed</button>';
+  el.addEventListener('click', function (e) {
+    if (!e.target.matches('.filter-btn')) return;
+    el.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+    var status = e.target.dataset.status;
+    var filtered = status === 'all' ? allProjects : allProjects.filter(function (p) { return p.status === status; });
+    renderProjects(filtered);
+  });
+}
+
+function renderProjects(projects) {
+  var el = document.getElementById('projects-grid');
+  if (!projects.length) { el.innerHTML = GeoLab.emptyState('No projects match this filter yet.'); return; }
+  el.innerHTML = projects.map(function (p) {
+    return '<div class="project-card ' + p.status + '">' +
+      '<span class="badge badge-' + p.status + '">' + p.status + '</span>' +
+      '<div class="project-title">' + GeoLab.escapeHTML(p.title) + '</div>' +
+      '<div class="project-meta"><span><strong>' + GeoLab.escapeHTML(p.sponsor) + '</strong></span><span>' + GeoLab.escapeHTML(p.period) + '</span><span>' + GeoLab.escapeHTML(p.amount) + '</span></div>' +
+      '</div>';
+  }).join('');
+}
+
+function renderImpact(items) {
+  document.getElementById('impact-grid').innerHTML = items.map(function (i) {
+    return '<div class="impact-item"><div class="impact-bullet"></div><span>' + GeoLab.escapeHTML(i) + '</span></div>';
+  }).join('');
+}
+
+function renderCompanies(companies) {
+  document.getElementById('companies-grid').innerHTML = companies.map(function (c) {
+    return '<div class="company-card"><div class="company-name">' + GeoLab.escapeHTML(c.name) + '</div>' +
+      '<div class="company-meta">' + GeoLab.escapeHTML(c.type) + ' at IIT Kanpur · ' + c.founded + '</div>' +
+      '<div class="company-desc">' + GeoLab.escapeHTML(c.description) + '</div>' +
+      '<span class="badge badge-navy">' + GeoLab.escapeHTML(c.status) + '</span></div>';
+  }).join('');
+}
+</script>
+</body>
+</html>

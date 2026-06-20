@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &amp; Updates — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Latest achievements, awards, patents, and industry updates from the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<!-- ADDED: FontAwesome for the external link icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+  .news-icon {
+    flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--navy-08); color: var(--navy); display: flex; align-items: center; justify-content: center;
+  }
+  .news-icon svg { width: 18px; height: 18px; }
+  .row-item.news-row { align-items: flex-start; }
+  .news-cat {
+    display: inline-block; font-family: var(--f-mono); font-size: 0.68rem; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--steel); margin-bottom: 6px;
+  }
+  .news-link {
+    display: inline-block; margin-top: 8px; font-size: 0.82rem; font-weight: 600; color: var(--steel); text-decoration: none; transition: color 0.2s;
+  }
+  .news-link:hover { color: var(--navy); }
+  .event-card { display: flex; flex-direction: column; height: 100%; }
+  .event-date { font-family: var(--f-mono); font-size: 0.76rem; color: var(--steel); margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">News &amp; Updates</div>
+      <h1>Latest from the Lab</h1>
+      <p class="lead">Achievements, awards, patents, and industry milestones from the Lab.</p>
+    </div>
+  </div>
+
+  <!-- NEWS FEED -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Updates</div>
+        <h2 class="section-title">News Feed</h2>
+      </div>
+      <div class="filter-row" id="news-filter"></div>
+      <div class="row-list" id="news-list"></div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Upcoming</div>
+        <h2 class="section-title">Events</h2>
+        <p class="section-desc">Talks, seminars, and lab-hosted events.</p>
+      </div>
+      <div class="grid-3" id="events-grid"></div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Training</div>
+        <h2 class="section-title">Workshops</h2>
+        <p class="section-desc">Hands-on workshops on LiDAR data acquisition, processing, and applications.</p>
+      </div>
+      <div class="grid-3" id="workshops-grid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section navy">
+    <div class="container">
+      <div class="cta-band" style="background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+        <div>
+          <h2 style="color:#fff;font-size:1.5rem;">Have a LiDAR query or collaboration in mind?</h2>
+          <p style="color:rgba(255,255,255,0.65);margin-top:6px;">Reach out — we cover the full spectrum of LiDAR research, technology, and applications.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">Geoinformatics Laboratory</span></span>
+        </div>
+        <p>India's one-stop solution for LiDAR research, technology, and applications. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Geoinformatics Laboratory, IIT Kanpur. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+var ALL_NEWS = [];
+// Added 'Publication' mapped to a specific icon
+var CAT_ICON = { 'Achievement': 'file-check', 'Award': 'file-check', 'Patent': 'file-check', 'Industry': 'handshake', 'Publication': 'file-text' };
+
+GeoLab.fetchJSON('data/news.json').then(function (data) {
+  ALL_NEWS = (data.news || []).slice().sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+  renderFilters(ALL_NEWS);
+  renderNews(ALL_NEWS);
+  renderEvents(data.events);
+  renderWorkshops(data.workshops);
+}).catch(function () {
+  GeoLab.showError(document.getElementById('news-list'), 'news');
+  GeoLab.showError(document.getElementById('events-grid'), 'events');
+  GeoLab.showError(document.getElementById('workshops-grid'), 'workshops');
+});
+
+function renderFilters(items) {
+  var cats = [];
+  items.forEach(function (n) { if (n.category && cats.indexOf(n.category) === -1) cats.push(n.category); });
+  var el = document.getElementById('news-filter');
+  var btns = ['<button class="filter-btn active" data-cat="all">All</button>'];
+  cats.forEach(function (c) {
+    btns.push('<button class="filter-btn" data-cat="' + GeoLab.escapeHTML(c) + '">' + GeoLab.escapeHTML(c) + '</button>');
+  });
+  el.innerHTML = btns.join('');
+  el.querySelectorAll('.filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      el.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-cat');
+      var filtered = cat === 'all' ? ALL_NEWS : ALL_NEWS.filter(function (n) { return n.category === cat; });
+      renderNews(filtered);
+    });
+  });
+}
+
+function renderNews(items) {
+  var el = document.getElementById('news-list');
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No news in this category yet.'); return; }
+  el.innerHTML = items.map(function (n) {
+    var icon = CAT_ICON[n.category] || 'file-check';
+    
+    // Check if link exists to render 'Read More'
+    var linkHtml = n.link ? '<a href="' + GeoLab.escapeHTML(n.link) + '" target="_blank" class="news-link"><i class="fas fa-external-link-alt"></i> Read More</a>' : '';
+
+    return '<div class="row-item news-row">' +
+      '<div class="news-icon">' + GeoLab.svgIcon(icon) + '</div>' +
+      '<div>' +
+        '<span class="news-cat">' + GeoLab.escapeHTML(n.category || '') + '</span>' +
+        '<div class="row-title" style="margin-bottom:4px;">' + GeoLab.escapeHTML(n.text) + '</div>' +
+        '<div class="row-meta">' + GeoLab.escapeHTML(n.display_date || n.date || '') + '</div>' +
+        linkHtml +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function renderEvents(items) {
+  var el = document.getElementById('events-grid');
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No upcoming events listed at the moment. Check back soon.'); return; }
+  el.innerHTML = items.map(function (ev) {
+    return '<div class="card event-card">' +
+      '<div class="card-icon">' + GeoLab.svgIcon('calendar') + '</div>' +
+      '<div class="event-date">' + GeoLab.escapeHTML(ev.display_date || ev.date || '') + '</div>' +
+      '<h3>' + GeoLab.escapeHTML(ev.title || '') + '</h3>' +
+      '<p>' + GeoLab.escapeHTML(ev.description || '') + '</p>' +
+    '</div>';
+  }).join('');
+}
+
+function renderWorkshops(items) {
+  var el = document.getElementById('workshops-grid');
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No workshops scheduled at the moment. Check back soon.'); return; }
+  el.innerHTML = items.map(function (w) {
+    return '<div class="card event-card">' +
+      '<div class="card-icon">' + GeoLab.svgIcon('layers') + '</div>' +
+      '<div class="event-date">' + GeoLab.escapeHTML(w.display_date || w.date || '') + '</div>' +
+      '<h3>' + GeoLab.escapeHTML(w.title || '') + '</h3>' +
+      '<p>' + GeoLab.escapeHTML(w.description || '') + '</p>' +
+    '</div>';
+  }).join('');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+{
+  "projects": [
+    {
+      "period": "2024–2027",
+      "sponsor": "DST (NGP)",
+      "title": "Development Of Upscaling Model By Integrating Terrestrial Lidar And Aerial Lidar For Individual Tree Morphology, Above Ground Biomass, And Species Identification Ti Stimate Carbon Stock",
+      "amount": "₹26.50 Lakh",
+      "status": "ongoing"
+    },
+    {
+      "period": "2024–2026",
+      "sponsor": "DST (NGP)",
+      "title": "Deep Learning Based Approach To Quantify The Emergency Vehicle Accessibility In Urban Areas Using Lidar And Images",
+      "amount": "₹8.11 Lakh",
+      "status": "ongoing"
+    },
+    {
+      "period": "2023–2024",
+      "sponsor": "IDEAS TiH - ISI Kolkata",
+      "title": "Precision Spraying Tool For Orchards Using Lidar And Deep Learning",
+      "amount": "₹40.60 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2022–2023",
+      "sponsor": "Indo Austria (WTZ)-DST",
+      "title": "Traveling grant for research collaboration in forest characterization using LiDAR data",
+      "amount": "₹5.70 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2019–2023",
+      "sponsor": "DST",
+      "title": "Generation and labelling of LiDAR point cloud for Automatic Classification through CNN",
+      "amount": "₹60.53 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2017–2019",
+      "sponsor": "DST",
+      "title": "GIS and Soft Computing based land consolidation system",
+      "amount": "₹30.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2017–2018",
+      "sponsor": "MHRD",
+      "title": "A device for estimation of Solar Potential at a point",
+      "amount": "₹15.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2015–2018",
+      "sponsor": "NOW and DeiTY",
+      "title": "Kumbh Mela: Measuring and understanding the dynamics of mankind’s largest crowd",
+      "amount": "N/A",
+      "status": "completed"
+    },
+    {
+      "period": "2012–2013",
+      "sponsor": "DST",
+      "title": "Developing standards for airborne LiDAR data capture",
+      "amount": "₹5.17 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2012–2013",
+      "sponsor": "DRDO",
+      "title": "3D City modelling using LiDAR data",
+      "amount": "₹8.99 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2012–2012",
+      "sponsor": "DRDO",
+      "title": "Technology development for motion correction during laser scanning",
+      "amount": "₹22.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2011–2012",
+      "sponsor": "DRDO",
+      "title": "3D imaging of strategic target for LCS measurement",
+      "amount": "₹10.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2009–2011",
+      "sponsor": "DRDO",
+      "title": "3D imaging of naval targets and development of image visualisation algorithm and software",
+      "amount": "₹17.20 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2006–2010",
+      "sponsor": "DST",
+      "title": "Mathematical modelling of flood inundation area due to tsunami by using resolution altimetric LiDAR data under the GIS environment",
+      "amount": "₹31.59 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2007–2010",
+      "sponsor": "DST",
+      "title": "Remote Sensing & Archaeological investigations for the interpretation of the growth of the holy city of Varanasi",
+      "amount": "₹8.19 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2006–2009",
+      "sponsor": "MHRD",
+      "title": "Airborne altimetric LiDAR sensor: Comprehensive accuracy analysis through field verification and mathematical modelling",
+      "amount": "₹28.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2006–2008",
+      "sponsor": "ISRO",
+      "title": "Waveform and topographic data simulator for LLRI - Chandrayan-1",
+      "amount": "₹8.40 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2005–2007",
+      "sponsor": "RESPOND-ISRO",
+      "title": "Development of a simulator for airborne altimetric LiDAR",
+      "amount": "₹4.95 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2004–2007",
+      "sponsor": "MHRD",
+      "title": "DSM generation using high altitude satellite photos for identification and mapping of active tectonic landforms related to paleo-earthquake in Kumaon Himalaya",
+      "amount": "₹15.00 Lakh",
+      "status": "completed"
+    },
+    {
+      "period": "2000–2004",
+      "sponsor": "DST",
+      "title": "Infrastructure development in the area of Geoinformatics (at IT-BHU)",
+      "amount": "₹25.00 Lakh",
+      "status": "completed"
+    }
+  ],
+  "impact_projects": [
+    "LiDAR for FLS in Bullet Train Project from Ahmedabad to Mumbai",
+    "Ganga LiDAR Mapping for NMCG and NHP Projects – 40,000 sq km",
+    "LiDAR Mapping for Rooftop Solar Energy of Bangalore City",
+    "3D Mapping for Chandigarh Smart City",
+    "Bilaspur-Manali-Leh Strategic Defence Railway Line LiDAR FLS Survey",
+    "Inland Security projects for solving LWE problem using LiDAR technology for Geo-Intelligence with DL/ML",
+    "LiDAR for River-Interlinking Projects in Rajasthan",
+    "Lift Irrigation Projects in Telangana: 10,000 sq km of Aerial LiDAR",
+    "Disaster Management project for Uttrakhand: 4,500 sq km area using airborne LiDAR",
+    "Mizoram Road Link Project by Aerial LiDAR survey over thick forest",
+    "Several Mobile LiDAR Survey for Road DPR projects leading to NHAI making use of LiDAR technology mandatory"
+  ],
+  "companies": [
+    {
+      "name": "SimDaaS Autonomy Pvt. Ltd.",
+      "founded": 2023,
+      "description": "Founded as an incubate at IIT Kanpur. Simulation platform for training and testing of autonomous systems. Received seed funding at ₹32cr post-money valuation in January 2025.",
+      "type": "Founded",
+      "status": "Active"
+    },
+    {
+      "name": "Geokno India Pvt. Ltd.",
+      "founded": 2009,
+      "description": "The FIRST faculty company at IIT Kanpur. Developed 4 products and completed 18 projects during incubation. Awarded 'Best Start up company in ICT in 2011' by ISBA. Graduated with majority equity acquisition by GMR.",
+      "type": "Founded",
+      "status": "Graduated (Acquired by GMR)"
+    },
+    {
+      "name": "AUS Pvt. Ltd.",
+      "founded": 2014,
+      "description": "Mentoring this company incubated at IIT Kanpur. Developed indigenous UAV and photogrammetric based mapping system. Received funding in first round.",
+      "type": "Mentored",
+      "status": "Active"
+    },
+    {
+      "name": "Nebula Cloud by GVB Geomatics",
+      "founded": 2021,
+      "description": "Mentoring the company for design of product and reaching the market since October 2021.",
+      "type": "Mentored",
+      "status": "Active"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "professor": {
+    "name": "Dr. Bharat Lohani",
+    "title": "Professor",
+    "department": "Department of Civil Engineering",
+    "institution": "Indian Institute of Technology Kanpur",
+    "email": "blohani@iitk.ac.in",
+    "phone": "+91-512-392 7413",
+    "office": "Department of Civil Engineering, IIT Kanpur, Kanpur 208 016, India",
+    "bio": "Dr. Bharat Lohani is a Professor of Geoinformatics in the Department of Civil Engineering at the Indian Institute of Technology Kanpur (IIT Kanpur). He is widely recognized as a leading expert in LiDAR (Light Detection and Ranging) technology, 3D laser scanning, and remote sensing within India. Alongside his academic contributions, Dr. Lohani is an entrepreneurial innovator who co-founded companies like Geokno India Pvt. Ltd. and SimDaaS Autonomy Pvt. Ltd. to transition geospatial research into industrial commercial applications.",
+    "photo": "data/photos/bharat-lohani.jpg",
+    "fellowships": [
+      "Fellow, Indian Society of Remote Sensing",
+      "Fellow, Institution of Surveyors India",
+      "Commonwealth Scholar"
+    ],
+    "education": [
+      {
+        "degree": "Ph.D., Remote Sensing & Environmental Sciences",
+        "school": "University of Reading, UK",
+        "year": "1999",
+        "note": "Commonwealth Scholar"
+      },
+      {
+        "degree": "M.E., Photogrammetric Engineering & Remote Sensing",
+        "school": "University of Roorkee, India",
+        "year": "1990",
+        "note": "First Class (Hons.)"
+      },
+      {
+        "degree": "B.E., Civil Engineering",
+        "school": "MMM Engineering College, Gorakhpur",
+        "year": "1988",
+        "note": "First Class (Hons.)"
+      }
+    ],
+    "specializations": [
+      "LiDAR / Laser Scanning",
+      "Point Cloud Processing",
+      "Sensor Simulation",
+      "Autonomous Systems",
+      "Photogrammetry",
+      "Remote Sensing",
+      "GIS",
+      "GNSS"
+    ]
+  },
+  "researchers": [
+    {
+      "name": "Dr. Vivek Anand",
+      "role": "Fellow, Academic and Research Excellence",
+      "topic": "Sim-to-Real, Realistic Sensor Simulation, Intelligent Transportation Systems, Computer Vision",
+      "photo": "data/photos/vivek-anand.jpg",
+      "email": "vivanand13@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/voodooedd/",
+      "website": "https://home.iitk.ac.in/~viveka21/"
+    },
+    {
+      "name": "Dr. Moonis Ali",
+      "role": "Fellow, Academic and Research Excellence",
+      "topic": "Upscaling of plot level TLS observation to ALS data for biomass estimation",
+      "photo": "data/photos/moonis-ali.jpg",
+      "linkedin": "https://www.linkedin.com/in/moonis-ali-iitk/",
+      "website": "https://home.iitk.ac.in/~moonisali20/"
+    },
+    {
+      "name": "Dr. Sri Priyanka",
+      "role": "Fellow, Academic and Research Excellence",
+      "topic": "Automatic identification of rain water harvesting sites and structures using LiDAR data, GIS and DSS",
+      "photo": "data/photos/sri-priyanka.jpg",
+      "linkedin": "https://www.linkedin.com/in/dr-sri-priyanka-kommula-65639614/"
+      
+    },
+    {
+      "name": "Dr. Aditya",
+      "role": "Fellow, Academic and Research Excellence",
+      "topic": "City forest characterization using MLS and ALS data",
+      "photo": "data/photos/aditya-a.jpg",
+      "linkedin": "https://www.linkedin.com/in/adityak-connect/"
+    }
+    
+    
+  ],
+  "students": {
+    "phd_current": [
+      {
+        "name": "Apritam Biswas",
+        "topic": "Tree species identification using LiDAR and spectral data",
+        "co_guide": "",
+        "photo": "data/photos/apratim-biswas.jpg",
+        "email": "apritamb21@iitk.ac.in",
+        "linkedin": "https://www.linkedin.com/in/apratimb21/"
+
+      },
+      {
+        "name": "Sara Raghvendra",
+        "topic": "LiDAR based application for vegetation",
+        "co_guide": "Prof. Y V N Krishna Murthy",
+        "photo": ""
+      }
+    ],
+    "mtech_current": [
+      {
+        "name": "Praveen Pitchika",
+        "topic": "Aircraft verification using Physical and learning models",
+        "co_guide": "Gaurav Pandey (TAMU)",
+        "photo": ""
+      },
+      {
+        "name": "Arka Dipta Sarkar",
+        "topic": "Assessment of monocular image depth estimation for traffic scenarios",
+        "co_guide": "",
+        "photo": ""
+      },
+      {
+        "name": "Ashis Aryal",
+        "topic": "Diffusion model for closing sim to real gap in images for scenarios",
+        "co_guide": "",
+        "photo": ""
+      },
+      {
+        "name": "Arunabh Dihingia",
+        "topic": "Tree Crown segmentation using aerial LiDAR data",
+        "co_guide": "",
+        "photo": ""
+      },
+      {
+        "name": "Ashish Gharge",
+        "topic": "Algorithm for aircraft distance and azimuth guidance for safer parking",
+        "co_guide": "Gaurav Pandey (TAMU)",
+        "photo": ""
+      },
+      {
+        "name": "Ritvik L",
+        "topic": "Deep Learning for leaf filtering from TLS data",
+        "co_guide": "",
+        "photo": ""
+      }
+    ],
+    "btech_current": [],
+    "phd_alumni": [
+      {
+        "name": "Vivek Anand",
+        "year": "2026",
+        "topic": "Physics-Informed Learning-based LiDAR Simulation for Autonomous Vehicles",
+        "photo": "data/photos/vivek-anand.jpg",
+        "email": "vivanand13@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/voodooedd/",
+      "website": "https://home.iitk.ac.in/~viveka21/"
+      },
+      {
+        "name": "Sri Priyanka",
+        "year": "2026",
+        "topic": "Automatic identification of rain water harvesting sites and structures using LiDAR data, GIS and DSS",
+        "photo": "data/photos/sri-priyanka.jpg",
+        "linkedin": "https://www.linkedin.com/in/dr-sri-priyanka-kommula-65639614/"
+      },
+      {
+        "name": "Aditya",
+        "year": "2026",
+        "topic": "City forest characterization using MLS and ALS data",
+        "photo": "data/photos/aditya-a.jpg",
+        "linkedin": "https://www.linkedin.com/in/adityak-connect/"
+      },
+      {
+        "name": "Moonis Ali",
+        "year": "2026",
+        "topic": "Upscaling of plot level TLS observation to ALS data for biomass estimation",
+        "photo": "data/photos/moonis-ali.jpg",
+        "linkedin": "https://www.linkedin.com/in/moonis-ali-iitk/",
+        "website": "https://home.iitk.ac.in/~moonisali20/"
+      },
+      {
+        "name": "Aswani Kumar Munnangi",
+        "year": "2023",
+        "topic": "GIS based Land Consolidation system using optimization and expert system",
+        "photo": ""
+      },
+      {
+        "name": "Bhavesh Kumar",
+        "year": "2020",
+        "topic": "Deep learning architectures for classification of mobile LiDAR data",
+        "photo": ""
+      },
+      {
+        "name": "Shurabhi Gupta",
+        "year": "2019",
+        "topic": "Socially intelligent vehicles",
+        "photo": ""
+      },
+      {
+        "name": "Arjun Rao",
+        "year": "2018",
+        "topic": "Employing LiDAR data for urban flood modeling using MIKE FLOOD and neural networks",
+        "photo": ""
+      },
+      {
+        "name": "Salil Goel",
+        "year": "2018",
+        "topic": "Cooperative Localisation of Unmanned Aerial Vehicles using Low Cost Sensors",
+        "photo": ""
+      },
+      {
+        "name": "Manohar Yadav",
+        "year": "2017",
+        "topic": "Pole and road geometry extraction using LiDAR data",
+        "photo": ""
+      },
+      {
+        "name": "Ajay Dashora",
+        "year": "2013",
+        "topic": "Optimization System for Flight Planning for Airborne LiDAR Data Acquisition",
+        "photo": ""
+      },
+      {
+        "name": "Suddhasheel Ghosh",
+        "year": "2012",
+        "topic": "Visualization Pipelines for LiDAR Data with geocoded Aerial Photographs",
+        "photo": ""
+      },
+      {
+        "name": "Susham Biswas",
+        "year": "2011",
+        "topic": "Sound Propagation Modeling at High Resolution Using LiDAR data and Aerial Photograph",
+        "photo": ""
+      }
+    ],
+    "mtech_alumni": [
+      { "name": "Aman Kumar Singh", "year": "2025", "topic": "Aircraft model identification using deep learning", "photo": "" },
+      { "name": "Jacob Babu", "year": "2025", "topic": "Light weight deep learning model development for objection detection using AV sensors", "photo": "" },
+      { "name": "Khushbu", "year": "2025", "topic": "Light weight deep learning model development for fruit identification in orchards", "photo": "" },
+      { "name": "Shivam Kumar", "year": "2025", "topic": "A comprehensive investigation of 2D CNN approach for Semantic Segmentation of Point Cloud Data", "photo": "" },
+      { "name": "K Siri", "year": "2025", "topic": "Accuracy Assessment of Simulated LiDAR Point Cloud Data using Comparison Metrics", "photo": "" },
+      { "name": "Vishal Kumar Soni", "year": "2025", "topic": "Improving industry pipeline for transmission line extraction using Deep learning techniques", "photo": "" },
+      { "name": "Etikyala Nuthana", "year": "2024", "topic": "Solar Potential Estimation of Rooftops and Facades Using Aerial LiDAR Data", "photo": "" },
+      { "name": "Rudra Kant Goswami", "year": "2023", "topic": "Physics-based LiDAR Simulation", "photo": "" },
+      { "name": "Shashank Santoshrao Karyakarte", "year": "2023", "topic": "Deep Learning-based Semantic Segmentation of 3D LiDAR Point Cloud", "photo": "" },
+      { "name": "Eiffel Bastin", "year": "2022", "topic": "A decision-making evaluation for the selection of LiDAR Point Cloud labelling platform", "photo": "" },
+      { "name": "Aritra Nandy", "year": "2022", "topic": "Power Line Extraction From LiDAR Point Clouds Using Deep Learning", "photo": "" },
+      { "name": "Ajay Chaurasia", "year": "2021", "topic": "A Decision-Making System for the Selection of Lidar Point Cloud Annotation Platform", "photo": "" },
+      { "name": "Nishu Yaduvanshi", "year": "2021", "topic": "Use of LiDAR data, GIS, DSS for water conservation sites", "photo": "" },
+      { "name": "Ashish Kandari", "year": "2021", "topic": "PointCNN for segmentation of powerlines from 3D LiDAR point cloud", "photo": "" },
+      { "name": "Pooja Gupta", "year": "2021", "topic": "Deep Learning based Semantic Segmentation of 3D LiDAR Point Cloud", "photo": "" },
+      { "name": "Deepanshu Yadav", "year": "2019", "topic": "Determination of solar insolation over an area using point cloud obtained from terrestrial photographs", "photo": "" },
+      { "name": "Himanshu Gupta", "year": "2018", "topic": "Development of a Mobile Based Application to Estimate Solar Potential", "photo": "" },
+      { "name": "Tarun Agrawal", "year": "2018", "topic": "Land consolidation: rearrangement process using algorithm for agricultural land", "photo": "" },
+      { "name": "Shivam Saraswat", "year": "2018", "topic": "Development of a UTM (UAV Traffic Management) system for India", "photo": "" },
+      { "name": "Salik Abbasi", "year": "2018", "topic": "Development of UAV Traffic Management System using Mixed Integer Linear Programming", "photo": "" },
+      { "name": "Devendra Chaudhary", "year": "2017", "topic": "An approach for determining solar potential of a place using terrestrial images", "photo": "" },
+      { "name": "Namit Mittal", "year": "2016", "topic": "Simulating Airborne LiDAR Data Using Advanced Computing Techniques", "photo": "" },
+      { "name": "Aditya Verma", "year": "2016", "topic": "Analysis of Foot-Mounted Navigation System for Surveying", "photo": "" },
+      { "name": "Saurabh Shah", "year": "2016", "topic": "A system for augmenting mobile images with additional information from a server", "photo": "" },
+      { "name": "Subhadarsini, Suchismita", "year": "2016", "topic": "Investigation of catchment identification algorithms for urban area using LiDAR data", "photo": "" },
+      { "name": "Sonam", "year": "2016", "topic": "Comparative Study of Algorithms for Extracting pole-like objects using Mobile LiDAR Data", "photo": "" },
+      { "name": "Sadbodh Sharma", "year": "2016", "topic": "Monitoring Construction Progress Using UAV Acquired Images", "photo": "" },
+      { "name": "Shrey Agrawal", "year": "2016", "topic": "Investigation of Spatio-temporal Interpolation Techniques", "photo": "" },
+      { "name": "Shubhi Harbola", "year": "2016", "topic": "A novel approach for estimating horizontal accuracy of LiDAR data", "photo": "" },
+      { "name": "Gaurav Sharma", "year": "2016", "topic": "Investigation of laser scanner response against various archaeological materials", "photo": "" },
+      { "name": "Abhay Kumar Mishra", "year": "2015", "topic": "Augmented reality system for Archaeological Heritage Dimensional Information", "photo": "" },
+      { "name": "Swagata Saran", "year": "2015", "topic": "3D documentation of Archaeological Herigtage – Taj Mahal", "photo": "" },
+      { "name": "Natrajan Jayaswal", "year": "2015", "topic": "A new method for spatio temporal interpolation of crowd source data", "photo": "" },
+      { "name": "Shikhar Gupta", "year": "2015", "topic": "Identification of pole like structures from Mobile Mapping Data", "photo": "" },
+      { "name": "Srinath Purohit", "year": "2015", "topic": "Modelling of LCS for defence applications", "photo": "" },
+      { "name": "Arbaz Khan", "year": "2014", "topic": "Landmark based navigation", "photo": "" },
+      { "name": "Sapan Jain", "year": "2014", "topic": "Modelling laser cross-section", "photo": "" },
+      { "name": "Saurabh Kumar", "year": "2014", "topic": "GIS based system for heavy duty consignment transportation", "photo": "" },
+      { "name": "Anamika Singh", "year": "2014", "topic": "Algorithm Development and Implementation for Quality Control of Airborne LiDAR Dataset", "photo": "" },
+      { "name": "Maj. Piyush Shukla", "year": "2014", "topic": "Target tracking using aerial imaging platforms", "photo": "" },
+      { "name": "Surabhi Gupta", "year": "2014", "topic": "Augmented Reality System using LiDAR Point Cloud Data for Displaying Dimensional Information", "photo": "" },
+      { "name": "Vishesh Panjabi", "year": "2014", "topic": "Obstacle Navigation for Visually Impaired People using Stereo Vision", "photo": "" },
+      { "name": "Himanshu Kumar", "year": "2014", "topic": "Automatic LiDAR Data Registration Methods", "photo": "" },
+      { "name": "Agrim Gupta", "year": "2014", "topic": "3D modelling of tall chimneys using laser scanning", "photo": "" },
+      { "name": "Mohd. Shadab", "year": "2013", "topic": "Laser Cross Section estimation and modelling", "photo": "" },
+      { "name": "Ravi Sharma", "year": "2013", "topic": "Motion correction during laser scanning", "photo": "" },
+      { "name": "Maj. Siju Chacko", "year": "2012", "topic": "Development of flash LiDAR based surveillance system", "photo": "" },
+      { "name": "Sandeep Sridharan", "year": "2012", "topic": "Point cloud alignment using geometry and intensity", "photo": "" },
+      { "name": "Snehal Indulkar", "year": "2012", "topic": "Road extraction algorithms for mobile mapping data", "photo": "" },
+      { "name": "Brijesh Kumar Gupta", "year": "2011", "topic": "An efficient algorithm for trimming of LiDAR data", "photo": "" },
+      { "name": "Anjani Kumar Singh", "year": "2011", "topic": "GPS/INS integration for Mobile Mapping System", "photo": "" },
+      { "name": "Vipin Panwar", "year": "2011", "topic": "LiDAR data visualization system: An out-of-core multi-resolution rendering scheme", "photo": "" },
+      { "name": "Manohar Yadav", "year": "2011", "topic": "Laser scanner integration with INS-GPS for Mobile Mapping", "photo": "" },
+      { "name": "Salil Goel", "year": "2011", "topic": "Camera integration for the development of Land Based Mobile Mapping System", "photo": "" },
+      { "name": "Ahzam Sadab", "year": "2010", "topic": "Error analysis of LiDAR sensor", "photo": "" },
+      { "name": "Shalabh Khare", "year": "2010", "topic": "Technique for camera calibration", "photo": "" },
+      { "name": "Aditya Roshan", "year": "2010", "topic": "GPS-INS Integration using Kalman Filter", "photo": "" },
+      { "name": "Pankaj Akula", "year": "2010", "topic": "Development of a land based Mobile Mapping System", "photo": "" },
+      { "name": "Sara Raghvendra", "year": "2009", "topic": "Predictive modeling of GDOP and SNR for GPS using LiDAR data", "photo": "" },
+      { "name": "Surya Y Aditya", "year": "2008", "topic": "High resolution remote sensing data for noise modelling using GIS", "photo": "" },
+      { "name": "Bharat P Gandhi", "year": "2008", "topic": "Development of a Remote Sensing and GIS based approach for archaeological investigation", "photo": "" },
+      { "name": "Abhishek Kumar Singh", "year": "2007", "topic": "Development of point cloud simulator for LLRI onboard Chandrayaan -1", "photo": "" },
+      { "name": "Nishant Bhatnagar", "year": "2007", "topic": "LiDAR return waveform simulation for LLRI instrument onboard Chandrayan-1", "photo": "" },
+      { "name": "Lt. Col. Raman Kumar", "year": "2007", "topic": "A model for determination of GPS satellite visibility for predicting GDOP using LiDAR data", "photo": "" },
+      { "name": "Parameshwar Reddy", "year": "2006", "topic": "Mathematical simulator for airborne altimetric LiDAR", "photo": "" },
+      { "name": "Ajay Dashora", "year": "2005", "topic": "An investigation on photogrammetric modelling of CORONA satellite images for mapping purposes", "photo": "" },
+      { "name": "Rajneesh Singh", "year": "2005", "topic": "Detail investigations on building identification from LiDAR data using Hough transform", "photo": "" },
+      { "name": "Ekta Amar", "year": "2005", "topic": "Building reconstruction through DLT using historical photographs and laserscanning", "photo": "" },
+      { "name": "Parvesh Kumari", "year": "2004", "topic": "Extraction of planar surface from 3D point clouds for building reconstruction", "photo": "" },
+      { "name": "Rajeev Kumar", "year": "2003", "topic": "Ground water potential zoning using remotely sensed data", "photo": "" },
+      { "name": "Rajesh Khatri", "year": "2002", "topic": "A study of scaling characteristics of river meandering using remote sensing", "photo": "" },
+      { "name": "Anand S. Chouhan", "year": "2002", "topic": "Development of algorithm for automatic determination of geomorphological parameters", "photo": "" }
+    ],
+    "btech_alumni": [
+      { "name": "Raunak Goyal, Amit Saxena", "year": "2013", "topic": "Optimal solution for cutting and filling of surfaces", "photo": "" },
+      { "name": "Sivaram Konanki", "year": "2013", "topic": "Software for chimney computations", "photo": "" },
+      { "name": "Ankit Garg", "year": "2011", "topic": "Design of a mobile navigation system based on GIS and SMS", "photo": "" },
+      { "name": "Aditya Labroo, Kritika Singh, Rohit Razdan, Utkarsh Rastogi", "year": "2010", "topic": "Web GIS based Traveller Information System", "photo": "" },
+      { "name": "Praveen Kumar", "year": "2009", "topic": "Techniques for aligning laser scans", "photo": "" },
+      { "name": "Rohit Ranjan", "year": "2008", "topic": "Plane extraction from LiDAR data using Hough Transform and Planar Patch method", "photo": "" },
+      { "name": "Rahul Singh Parihar", "year": "2008", "topic": "Extraction of roof planes using LiDAR data", "photo": "" },
+      { "name": "Anand Hingway, Kaif Mohsin", "year": "2007", "topic": "Building Identification from LIDAR data using modified Hough Transform approach", "photo": "" },
+      { "name": "Siddhartha Prakash", "year": "2007", "topic": "Development of indices for assessment of building extraction accuracy", "photo": "" },
+      { "name": "Harendra Singh, Gurjeet Singh", "year": "2006", "topic": "Development of GIS for IIT Kanpur", "photo": "" },
+      { "name": "Kumar Prashant, Shishir Mishra", "year": "2006", "topic": "Modelling the return waveform for altimetric LiDAR", "photo": "" },
+      { "name": "Gaurav Jain, Nitin Katiyar, Shishir Srivastava", "year": "2005", "topic": "Interfacing of GIS with ground water and transport simulation model for aquifer process modelling", "photo": "" },
+      { "name": "Salman Khan, Shivam Omar", "year": "2005", "topic": "3-D visualization of LiDAR data", "photo": "" },
+      { "name": "Nishank Agrawal, Nitish Kumar Agrawal", "year": "2004", "topic": "Development of an altimetric LiDAR simulator", "photo": "" }
+    ]
+  }
+}
