@@ -1,0 +1,882 @@
+{
+  "journal": [
+    {
+      "year": 2026,
+      "authors": "Kommula, S. P., Lohani, B., Ryu, D., and Winter, S.",
+      "title": "Transfer Learning for Identifying Rainwater Harvesting Sites in Training Data-Scarce Catchments",
+      "journal": "Scientific Reports (Accepted)",
+      "doi": ""
+    },
+    {
+      "year": 2026,
+      "authors": "Kommula, S. P., Lohani, B., Ryu, D., and Winter, S.",
+      "title": "Integrating Lumped Hydrological Modelling with GIS-Based Flow Accumulation for Spatiotemporal Streamflow Estimation",
+      "journal": "Environmental Modelling & Software, Volume 203, 107026",
+      "doi": "10.1016/j.envsoft.2026.107026"
+    },
+    {
+      "year": 2026,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "Cross-modality learning between Aerial and Mobile LiDAR for Vegetation Segmentation",
+      "journal": "International Journal of Remote Sensing, 1–17",
+      "doi": "10.1080/01431161.2026.2661835"
+    },
+    {
+      "year": 2026,
+      "authors": "Anand, V., Lohani, B., Mishra, R., Kumar, V., and Pandey, G.",
+      "title": "Towards Closing the Sim-to-Real Gap for Autonomous Vehicles: A Physics-Guided Learning Approach for LiDAR Intensity Simulation",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "doi": "10.1109/TITS.2026.3681982"
+    },
+    {
+      "year": 2026,
+      "authors": "Kumar, V., Lohani, B., Bais, A. S., Aditya, A., and Khan, P.",
+      "title": "Ke-MLS: A Large-scale Labeled Mobile Lidar Data Set from Indian Urban Region",
+      "journal": "Environment and Planning B: Urban Analytics and City Science",
+      "doi": "10.1177/23998083261430812"
+    },
+    {
+      "year": 2026,
+      "authors": "Ali, M., Biswas, A., Iglseder, A., Kumar, V., Kumar, S., Gupta, S., Hollaus, M., Pfeifer, N., and Lohani, B.",
+      "title": "Terrestrial and Airborne Laser Scanning Dataset of Trees in the Shivalik Range, India with Field Measurements and Leaf–Wood Classifications",
+      "journal": "Scientific Data",
+      "doi": "10.1038/s41597-026-06674-w"
+    },
+    {
+      "year": 2026,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "Advancing vegetation segmentation from ALS point clouds: From benchmarking to GreenSegNet-A",
+      "journal": "Science of Remote Sensing, Volume 13, 100382",
+      "doi": "10.1016/j.srs.2026.100382"
+    },
+    {
+      "year": 2026,
+      "authors": "Singh, A. K., and Lohani, B.",
+      "title": "Modeling Point Cloud Distortions in Mobile Laser Scanning for Surveying",
+      "journal": "Journal of Surveying Engineering, ASCE, Volume 152, Issue 3",
+      "doi": "10.1061/JSUED2.SUENG-1663"
+    },
+    {
+      "year": 2025,
+      "authors": "Kommula, S. P., Ryu, D., Lohani, B., and Winter, S.",
+      "title": "Improving Micro Rainwater Harvesting Site Selection with High-Resolution LiDAR DEMs: A GIS-Based Multi-Criteria Approach",
+      "journal": "Remote Sensing Applications: Society and Environment",
+      "doi": "10.1016/j.rsase.2025.101839"
+    },
+    {
+      "year": 2025,
+      "authors": "Ali, M., Lohani, B., Hollaus, M., and Pfeifer, N.",
+      "title": "A Hybrid Approach for Enhanced Tree Volume Estimation of Complex Trees Using Terrestrial LiDAR",
+      "journal": "GIScience & Remote Sensing",
+      "doi": "10.1080/15481603.2025.2474836"
+    },
+    {
+      "year": 2025,
+      "authors": "Anand, V., Lohani, B., Pandey, G., and Mishra, R.",
+      "title": "Advancing LiDAR Intensity Simulation through Learning with Novel Physics-Based Modalities",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "doi": "10.1109/TITS.2025.3532687"
+    },
+    {
+      "year": 2024,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "GreenSegNet: A Novel Deep Learning Architecture for Urban Vegetation Segmentation from MLS Data",
+      "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+      "doi": "10.1109/TGRS.2024.3454990"
+    },
+    {
+      "year": 2024,
+      "authors": "Lohani, B., Khan, P., Kumar, V., and Gupta, S.",
+      "title": "Role of Simulated LiDAR Data for Training 3D Deep Learning Models: An Exhaustive Analysis",
+      "journal": "Journal of the Indian Society of Remote Sensing",
+      "doi": "10.1007/s12524-024-01905-2"
+    },
+    {
+      "year": 2024,
+      "authors": "Kumar, V., Nandy, A., Soni, V., and Lohani, B.",
+      "title": "Powerline Extraction from Aerial and Mobile LiDAR Data Using Deep Learning",
+      "journal": "Earth Science Informatics",
+      "doi": "10.1007/s12145-024-01310-w"
+    },
+    {
+      "year": 2024,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "Benchmarking Deep Learning Architectures for Urban Vegetation Point Cloud Semantic Segmentation from MLS",
+      "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+      "doi": "10.1109/TGRS.2024.3381976"
+    },
+    {
+      "year": 2024,
+      "authors": "Ali, M., Lohani, B., Hollaus, M., and Pfeifer, N.",
+      "title": "Benchmarking Geometry-Based Leaf-Filtering Algorithms for Tree Volume Estimation using Terrestrial LiDAR Scanners",
+      "journal": "Remote Sensing, 16(6), 1021",
+      "doi": "10.3390/rs16061021"
+    },
+    {
+      "year": 2024,
+      "authors": "Kuriyal, A., Kumar, V., and Lohani, B.",
+      "title": "pCTFusion: Point Convolution-Transformer Fusion with Semantic Aware Loss for Outdoor LiDAR Point Cloud Segmentation",
+      "journal": "SN Computer Science 5:272",
+      "doi": "10.1007/s42979-024-02627-5"
+    },
+    {
+      "year": 2023,
+      "authors": "Ali, M., Lohani, B., Hollaus, M., and Pfeifer, N.",
+      "title": "Quantifying the Impact of Higher-Order Branches on QSM-Based Volume Estimation of Trees Using Simulated Terrestrial LiDAR Data",
+      "journal": "Indian Cartographer 2024, 44, 26-33",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "authors": "Yadav, M., Khan, P., and Lohani, B.",
+      "title": "Geometric and radiometric constraints-based extraction of urban road manhole covers and their maintenance-related information using mobile laser scanning data",
+      "journal": "Geocarto International, Vol(37), Issue (27)",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "authors": "Rao, A., Jain, A., and Lohani, B.",
+      "title": "Development of a physics-guided neural network model for effective urban flood management",
+      "journal": "ASCE's Journal of Hydrologic Engineering, Vol. 27, Issue 9",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "authors": "Sharma, V.B., Tewari, S., Biswas, S., Lohani, B., Dwivedi, U.D., Dwivedi, D., Sharma, A., and Jung, J.P.",
+      "title": "Recent Advancements in AI-Enabled Smart Electronics Packaging for Structural Health Monitoring",
+      "journal": "Metals 2021, 11, 1537",
+      "doi": "10.3390/met11101537"
+    },
+    {
+      "year": 2021,
+      "authors": "Dayal, S., Goel, S., Lohani, B., Mittal, N., and Mishra, R. K.",
+      "title": "Comprehensive Airborne Laser Scanning (ALS) Simulation",
+      "journal": "Journal of the Indian Society of Remote Sensing 49, 1603–1622",
+      "doi": "10.1007/s12524-021-01334-5"
+    },
+    {
+      "year": 2021,
+      "authors": "Yadav, A., Goel, S., Lohani, B., and Singh, S.",
+      "title": "A UAV Traffic Management System for India: Requirement and Preliminary Analysis",
+      "journal": "Journal of the Indian Society of Remote Sensing, 49(3):515-525",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "authors": "Yadav, M., Khan, P., Singh, A. K., and Lohani, B.",
+      "title": "An automatic hybrid method-based ground filtering for all types of roadway environment mobile laser scanning data",
+      "journal": "Automation in Construction, 126, 1033681",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "authors": "Singh, S. K., Lohani, B., Arora, L., Choudhary, D., and Nagarajan, B.",
+      "title": "A visual-inertial system to determine accurate solar insolation and optimal PV panel orientation at a point and over an area",
+      "journal": "Renewal Energy, Volume 154, Pages 223-238",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "authors": "Kumar, B., Pandey, G., Lohani, B., and Mishra, S.C.",
+      "title": "A framework for automatic classification of mobile LiDAR data using multiple regions and 3D CNN architecture",
+      "journal": "International Journal of Remote Sensing, Volume 41, Pages 5588-5608",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "authors": "Yadav, M., Dhyasari., Lohani, B., and Goel, S.",
+      "title": "Automatic detection of road manhole cover using mobile LiDAR data of roadway scene",
+      "journal": "ISPRS Annals",
+      "doi": ""
+    },
+    {
+      "year": 2019,
+      "authors": "Yadav, M., and Lohani, B.",
+      "title": "Identification of trees and their trunks from mobile laser scanning data of roadway scenes",
+      "journal": "International Journal of Remote Sensing, 41(4), 1-26",
+      "doi": ""
+    },
+    {
+      "year": 2019,
+      "authors": "Gupta, S., Vasardani, M., Lohani, B., and Winter, S.",
+      "title": "Pedestrian's risk-based negotiation model for self-driving vehicles to get the right of way",
+      "journal": "Accident Analysis and Prevention, 124, pp.163-173",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "authors": "Kumar, B., Pandey, G., and Lohani, B.",
+      "title": "A multi-faceted CNN architecture for automatic classification of mobile LiDAR data and an algorithm to reproduce point cloud samples for enhanced training",
+      "journal": "International Society of Photogrammetry and Remote Sensing, 147 (2019) 80-90",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "authors": "Kumar, B., Lohani, B., and Pandey, G.",
+      "title": "Development of deep learning architecture for automatic classification of outdoor mobile LiDAR data",
+      "journal": "International Journal of Remote Sensing",
+      "doi": "10.1080/01431161.2018.1547929"
+    },
+    {
+      "year": 2018,
+      "authors": "Goel, S., Allison, K., and Lohani, B.",
+      "title": "Development and Experimental Evaluation of a Low-Cost Cooperative UAV Localization Network Prototype",
+      "journal": "Journal of Sensors and Actuator Networks, 7, 42",
+      "doi": "10.3390/jsan7040042"
+    },
+    {
+      "year": 2018,
+      "authors": "Lohani, B., Singh, S., Chaudhary, D., and Nagarajan, B.",
+      "title": "A New Approach for Determination of Solar Potential Using Terrestrial Images",
+      "journal": "Remote Sensing Letters, VOL. 9, NO. 7, 636–645",
+      "doi": "10.1080/2150704X.2018.1452061"
+    },
+    {
+      "year": 2018,
+      "authors": "Kumar, B., Yadav, M., Lohani, B., and Singh, A. K.",
+      "title": "A two-stage algorithm for ground filtering of airborne laser scanning data",
+      "journal": "International Journal of Remote Sensing",
+      "doi": "10.1080/01431161.2018.1466074"
+    },
+    {
+      "year": 2018,
+      "authors": "Yadav, M., Singh, A. K., and Lohani, B.",
+      "title": "Computation of road geometry parameters using mobile LiDAR system",
+      "journal": "Remote Sensing Applications: Society and Environment",
+      "doi": "10.1016/j.rsase.2018.02.003"
+    },
+    {
+      "year": 2017,
+      "authors": "Yadav, M., Singh A., and Lohani, B.",
+      "title": "Extraction of road surface from mobile LiDAR data of complex road environment",
+      "journal": "International Journal of Remote Sensing 38(16), 4645-4672",
+      "doi": ""
+    },
+    {
+      "year": 2017,
+      "authors": "Kealy, A., Goel, S., Gikas, V., Retscher, G., Toth, C., Brzezinska, D. G., and Lohani, B.",
+      "title": "Cooperative localization of unmanned aerial vehicles using GNSS, MEMS inertial and UWB sensors",
+      "journal": "ASCE Journal of Surveying Engineering, Vol. 143, Issue 4",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "authors": "Yadav, M., Lohani, B., Singh A., and Hussain, E.",
+      "title": "Identification of pole-like structures from mobile LiDAR data of complex road environment",
+      "journal": "International Journal of Remote Sensing, VOL. 37, NO. 20, 4748–4777",
+      "doi": "10.1080/01431161.2016.1219462"
+    },
+    {
+      "year": 2016,
+      "authors": "Goel, S., Kealy, A., and Lohani, B.",
+      "title": "Cooperative UAS Localization using low cost sensors",
+      "journal": "ISPRS Annals of Photogrammetry Remote Sensing and Spatial Information Science",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "authors": "Yadav, M., Husain, A., Singh, A.K., and Lohani, B.",
+      "title": "Pole-shaped object detection using mobile LiDAR data in rural road environments",
+      "journal": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume II-3/W5",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "authors": "Goel, S., and Lohani, B.",
+      "title": "Relative Contribution and Effect of Various Error Sources on the Performance of Mobile Mapping System (MMS)",
+      "journal": "Journal of the Indian Society of Remote Sensing",
+      "doi": "10.1007/s12524-014-0443-z"
+    },
+    {
+      "year": 2015,
+      "authors": "Lohani, B., Roshan, A., and Singh, A.",
+      "title": "Simulation of LIDAR Point Cloud for a Planet as Generated by Satellite Borne Laser Ranging Instrument",
+      "journal": "Journal of the Indian Society of Remote Sensing",
+      "doi": "10.1007/s12524-014-0438-9"
+    },
+    {
+      "year": 2014,
+      "authors": "Dashora, A., Lohani, B., and Deb, K.",
+      "title": "Method of flight planning for airborne LiDAR using genetic algorithms",
+      "journal": "SPIE Journal of Applied Remote Sensing, Vol 8, No 1, page 083576",
+      "doi": "10.1117/1.JRS.8.083576"
+    },
+    {
+      "year": 2014,
+      "authors": "Goel, S., and Lohani, B.",
+      "title": "Error analysis of motion correction method for laser scanning of moving objects",
+      "journal": "ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume II-5, pp 139-144",
+      "doi": "10.5194/isprsannals-II-5-139-2014"
+    },
+    {
+      "year": 2014,
+      "authors": "Gupta, S., and Lohani, B.",
+      "title": "Augmented reality system using LiDAR point cloud data for displaying dimensional information of objects on mobile phones",
+      "journal": "ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume II-5, pp 153-159",
+      "doi": "10.5194/isprsannals-II-5-153-2014"
+    },
+    {
+      "year": 2014,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Development and comparison of aerial photograph aided visualization pipelines for LiDAR data",
+      "journal": "International Journal of Digital Earth",
+      "doi": "10.1080/17538947.2014.897386"
+    },
+    {
+      "year": 2014,
+      "authors": "Dashora, A., Lohani, B., and Deb, K.",
+      "title": "Two-Step Procedure of Optimization for Flight Planning Problem for Airborne LiDAR Data Acquisition",
+      "journal": "International Journal of Mathematical Modelling and Numerical Optimisation, Vol. 4, No. 4",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "authors": "Ghosh, S., Lohani, B., and Misra, N.",
+      "title": "A study-based ranking of LiDAR data visualization schemes aided by georectified aerial images",
+      "journal": "Cartography and Geographic Information Science",
+      "doi": "10.1080/15230406.2014.880071"
+    },
+    {
+      "year": 2013,
+      "authors": "Yadav, M., Goel, S., Singh, A. K., and Lohani, B.",
+      "title": "Mobile mapping system using laser scanner, GPS and IMU",
+      "journal": "Journal of the Indian Society of Remote Sensing",
+      "doi": "10.1007/s12524-013-0340-x"
+    },
+    {
+      "year": 2013,
+      "authors": "Dashora, A., and Lohani, B.",
+      "title": "Turning mechanisms for airborne LiDAR and photographic data acquisition",
+      "journal": "Journal of Applied Remote Sensing 7(1), 073488",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "authors": "Goel, S., and Lohani, B.",
+      "title": "A Motion Correction Technique for Laser Scanning of Moving Objects",
+      "journal": "IEEE Geoscience and Remote Sensing Letters, Vol. 11, No. 1",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Mining LiDAR data with spatial clustering algorithms",
+      "journal": "International Journal of Remote Sensing, Vol 34-14, 5119 – 5135",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Experimental evaluation of LiDAR data visualization schemes",
+      "journal": "ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, I-2, 135-140",
+      "doi": "10.5194/isprsannals-I-2-135-2012"
+    },
+    {
+      "year": 2012,
+      "authors": "Dashora, A., and Lohani, B.",
+      "title": "Compatibility of Sun Position Models and 3D Topographic Data for Prediction of Shadow Zones",
+      "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 5(1458-1463)",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Shukla, S. P., Yadav, S., Lohani, B., and Biswas, S.",
+      "title": "Characterization of traffic noise for a typical Indian road crossing",
+      "journal": "Current Science, Vol. 103, NO. 10",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Biswas, S., and Lohani, B.",
+      "title": "Extraction of spatial parameters from classified LiDAR data and aerial photograph for sound modeling",
+      "journal": "ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, I-4, 59-64",
+      "doi": "10.5194/isprsannals-I-4-59-2012"
+    },
+    {
+      "year": 2008,
+      "authors": "Lohani, B., and Kumar, R.",
+      "title": "GPS-GDOP prediction in urban environment using LiDAR data",
+      "journal": "Journal of Applied Geodesy 2(4), 213–222",
+      "doi": ""
+    },
+    {
+      "year": 2008,
+      "authors": "Lohani, B., Bhatnagar, N., and Aditya, R.",
+      "title": "Return pulse waveform simulation for LLRI onboard Chandrayan-1",
+      "journal": "Journal of the Indian Society of Remote Sensing, 36(1), pp. 1-11",
+      "doi": ""
+    },
+    {
+      "year": 2008,
+      "authors": "Lohani, B., and Singh, R.",
+      "title": "Effect of data density, scan angle, and flying height on the accuracy of building extraction using LiDAR data",
+      "journal": "Geo Carto International, Vol. 23, No. 2, 81–94",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Dashora, A., Lohani, B., and Malik, J. N.",
+      "title": "A repository of earth resource information-CORONA satellite programme",
+      "journal": "Current Science, 92(7), 926-932",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "authors": "Lohani, B., Mason, D. C., Scott, T. R., and Sreenivas, B.",
+      "title": "Extraction of tidal channel networks from aerial photographs alone and combined with laser altimetry",
+      "journal": "International Journal of Remote Sensing, 27(1), 5-25",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "authors": "Dashora, A., Sreenivas, B., Lohani, B., Mallik, J. N., and Afroj",
+      "title": "GCP collection for CORONA satellite photographs: Issues and Methodology",
+      "journal": "Journal of the Indian Society of Remote Sensing, 34(2), 153-160",
+      "doi": ""
+    },
+    {
+      "year": 2005,
+      "authors": "Lohani, B., and Mason, D. C.",
+      "title": "A case study on error identification and minimization in Airborne Altimetric LiDAR data",
+      "journal": "International Journal of Geoinformatics, 1(3), 53-61",
+      "doi": ""
+    },
+    {
+      "year": 2001,
+      "authors": "Lohani, B., and Mason, D. C.",
+      "title": "Application of airborne scanning altimetric LiDAR to the study of tidal channel geomorphology",
+      "journal": "ISPRS Journal of Photogrammetry & Remote Sensing, 56(2001), 100-120",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "authors": "Lohani, B., and Mason, D. C.",
+      "title": "Construction of a digital elevation model of the Holderness coast using the waterline method and airborne thematic mapper data",
+      "journal": "International Journal of Remote Sensing, 20(3), 593-607",
+      "doi": ""
+    }
+  ],
+  "conference": [
+    {
+      "year": 2025,
+      "authors": "Ali, M., Lohani, B., Bandi, J., Hollaus, M., and Pfeifer, N.",
+      "title": "Object-Based Upscaling Approach for Tree Volume Estimation Using TLS and ALS",
+      "venue": "SilviLaser Conference, Quebec City",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Ali, M., Biswas, A., Lohani, B., Hollaus, M., Iglseder, A., and Pfeifer, N.",
+      "title": "Optimizing Tree Species Classification by Evaluating Grid Configuration, Object-Based Approaches, and Feature Selection in Indian Mixed Forests",
+      "venue": "SilviLaser Conference, Quebec City",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Anand, V., Lohani, B., Mishra, R., and Pandey, G.",
+      "title": "Towards Realistic LiDAR Intensity Simulation in Snowy Weather Using Physics-Informed Learning",
+      "venue": "36th IEEE Intelligent Vehicles Symposium (IV), Cluj-Napoca, Romania",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Priyanka, S., Dongreyol, R., Lohani, B., and Winter, S.",
+      "title": "Optimizing Rainwater Harvesting Site Selection Using Machine Learning Models",
+      "venue": "IGARSS 2025",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "TRANSFER LEARNING BETWEEN MLS POINT CLOUDS FOR VEGETATION SEGMENTATION",
+      "venue": "IGARSS 2025",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Kommula, S.P., Dongryeol, R., Lohani, B., and Winter, S.",
+      "title": "Data-Driven Rainwater Harvesting Site Selection: A Machine Learning Approach",
+      "venue": "9th World Water Summit, New Delhi, India",
+      "doi": ""
+    },
+    {
+      "year": 2025,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "GREENSEGNET: A NOVEL DEEP LEARNING ARCHITECTURE FOR URBAN VEGETATION SEGMENTATION FROM MLS DATA",
+      "venue": "IGARSS 2025",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "authors": "Aditya, A., Lohani, B., Aryal, J., and Winter, S.",
+      "title": "Deep Learning for Vegetation Segmentation from MLS point cloud in Urban",
+      "venue": "ISPRS Technical Commission IV Symposium, Fremantle, Perth, Australia",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "authors": "Priyanka, S., Dongreyol, R., Lohani, B., and Winter, S.",
+      "title": "Spatial-temporal assessment of water volume for identifying suitable locations for surface rainwater harvesting using GR4J",
+      "venue": "HYDROCWPRS2024",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "authors": "Ali, M., Lohani, B., Hollaus, M., and Pfeifer, N.",
+      "title": "Terrestrial and Aerial LiDAR Dataset of Individual Trees in the Shivalik Range, India",
+      "venue": "2024 IEEE India Geoscience and Remote Sensing Symposium",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "authors": "Anand, V., Lohani, B., Pandey, G., and Mishra, R.",
+      "title": "Toward Physics-informed Deep Learning Architectures for LiDAR Intensity Simulation",
+      "venue": "SIMULTECH 2024",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "authors": "Dongreyol, R., Priyanka, S., Lohani, B., and Winter, S.",
+      "title": "High-resolution Spatial Mapping of Runoff Prediction for Micro-scale Surface Rainwater Harvesting",
+      "venue": "EGU General Assembly 2024, Vienna, Austria",
+      "doi": "10.5194/egusphere-egu24-6789"
+    },
+    {
+      "year": 2023,
+      "authors": "Ali, M., Lohani, B., Hollaus, M., and Pfeifer, N.",
+      "title": "Hybrid approach for precise volume estimation of buttressed trees: Poisson surface reconstruction and treeQsm integration",
+      "venue": "InGARSS 2023",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "authors": "Priyanka, S., Lohani, B., Dongreyol, R., and Winter, S.",
+      "title": "Relative performance evaluation of LiDAR and Cartosat DEMs for surface rainwater harvesting site identification",
+      "venue": "MODSIM2023, 25th International Congress on Modelling and Simulation",
+      "doi": "10.36334/modsim.2023.kommula"
+    },
+    {
+      "year": 2022,
+      "authors": "Dashora, A., Kate, R. R., Munnangi, A. K., and Lohani, B.",
+      "title": "An Automated Approach for Partitioning of Inherited Land: A Case from India",
+      "venue": "FIG Working Week 2020, Amsterdam, the Netherlands",
+      "doi": ""
+    },
+    {
+      "year": 2019,
+      "authors": "Gupta, S., Vasardani, M., Lohani, B., and Winter, S.",
+      "title": "Scaling social rules to multi-party negotiations",
+      "venue": "Proceedings of the 26th Intelligent Transport Systems World Congress",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "authors": "Lohani, B., Ghosh, S., and Dashora, A.",
+      "title": "A Review of Data Collection and Processing Systems",
+      "venue": "Proceedings of the National Academy of Sciences, India",
+      "doi": "10.1007/s40010-017-0435-9"
+    },
+    {
+      "year": 2017,
+      "authors": "Goel, S., Kealy, A., and Lohani, B.",
+      "title": "A cooperative localization system for Unmanned Aerial Vehicles: Prototype development and analysis",
+      "venue": "10th International Symposium on Mobile Mapping Technology (MMT 2016)",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "authors": "Yadav, M., Singh, A. K., and Lohani, B.",
+      "title": "Road Geometry Parameters Computation using Mobile Terrestrial Laser Scanning",
+      "venue": "12th TPMDC, IIT Bombay",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "authors": "Goel, S., Kealy, A., and Lohani, B.",
+      "title": "Infrastructure vs Peer to Peer Cooperative Positioning: A Comparative Analysis",
+      "venue": "ION GNSS+ 2015 Conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "authors": "Yadav, M., Husain, A., Singh, A. K., and Lohani, B.",
+      "title": "3D rural road surface points detection using mobile LiDAR data for its condition assessment",
+      "venue": "3rd Conference of Transportation Research Group of India (3rd CTRG), Kolkata",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "authors": "Kealy, A., Goel, S., Gikas, V., Guenther, R., Toth, C., Brzezinska, D., and Lohani, B.",
+      "title": "Cooperative Localization of UAVs using Low Cost GNSS and MEMS Inertial Sensors",
+      "venue": "9th International Symposium on Mobile Mapping Technology (MMT 2015)",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "authors": "Shukla, P., Goel, S., Singh, P., and Lohani, B.",
+      "title": "Automatic geolocation of targets tracked by aerial imaging platforms using satellite imagery",
+      "venue": "ISPRS Archives of Photogrammetry Remote Sensing and Spatial Information Science",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "authors": "Lohani, B., Ghosh, S., and Dashora, A.",
+      "title": "Development of standards for airborne LiDAR data acquisition",
+      "venue": "Proceedings of the NSDI-2013",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "authors": "Goel, S., Yadav, M., Singh, A. K., and Lohani, B.",
+      "title": "Land based mobile mapping system using LiDAR sensor",
+      "venue": "India Geospatial Forum",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Lohani, B., Chacko, S., Ghosh, S., and Shashidharan, S.",
+      "title": "Flash LiDAR based surveillance system",
+      "venue": "XXXII INCA Congress 2012",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Goel, S., Yadav, M., Singh, A. K., and Lohani, B.",
+      "title": "Development of land based mobile mapping system",
+      "venue": "XXXII INCA Congress 2012",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "authors": "Lohani, B.",
+      "title": "Laser scanning technologies for meeting the challenges of civil engineering projects",
+      "venue": "Innovative Challenges in Civil Engineering, GZSCET",
+      "doi": ""
+    },
+    {
+      "year": 2011,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Heuristical feature extraction from LiDAR data and their visualization",
+      "venue": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences on Laser Scanning 2011",
+      "doi": ""
+    },
+    {
+      "year": 2008,
+      "authors": "Biswas, S., and Lohani, B.",
+      "title": "Development of high resolution 3D sound model with LiDAR data and air photo",
+      "venue": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B., and Mishra, R. K.",
+      "title": "Generating LiDAR data in laboratory: LiDAR simulator",
+      "venue": "International Archives of Photogrammetry, Remote Sensing and Spatial Information Sciences",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Mishra, R. K., and Lohani, B.",
+      "title": "An object-oriented software development approach to design simulator for airborne altimetric LiDAR",
+      "venue": "National conference on Emerging Trends in Information Technology",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B., and Kumar, R.",
+      "title": "A model for GPS-GDOP prediction in urban environment using LiDAR data",
+      "venue": "International conference on Optical 3D measurement techniques",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Near-realistic and 3D visualisation of LiDAR data",
+      "venue": "ISPRS Joint Workshop on Visualisation and exploration of Geospatial data",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B., and Mishra, R. K.",
+      "title": "Modeling airborne altimetric LiDAR system to simulate data capture process",
+      "venue": "GI Forum International Conference",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "authors": "Lohani, B., Reddy, P., and Mishra, R.",
+      "title": "Airborne Altimetric LiDAR Simulator: An education tool",
+      "venue": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Science",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "authors": "Lohani, B., and Sreenivas, B.",
+      "title": "Tidal channel identification from remotely sensed data using shape and spectral characteristics",
+      "venue": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Science",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Ghosh, S., and Lohani, B.",
+      "title": "Development of a system for 3D visualization of LiDAR data",
+      "venue": "Map World Forum 2007",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B., and Singh, R.",
+      "title": "Development of a Hough Transform based algorithm for extraction of buildings from actual and simulated LiDAR data",
+      "venue": "Map World Forum 2007",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "authors": "Mason, D. C., et al.",
+      "title": "LiDAR mapping of tidal marshes for ecogeomorphological modelling in the TIDE project",
+      "venue": "8th International Conference on Remote Sensing for Marine and Coastal Environments",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "authors": "Lohani, B., Mason, D. C., and Bist, H. S.",
+      "title": "Semi-automatic Multi-Level Approach for Extraction of Tidal Channels from Aerial Photographs and Hyperspectral Data",
+      "venue": "Map India 2004",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "authors": "Agrawal, N., Agrawal, N., and Lohani, B.",
+      "title": "Development of a Simulator for Airborne Altimetric LiDAR",
+      "venue": "Map India 2004",
+      "doi": ""
+    },
+    {
+      "year": 2002,
+      "authors": "Mason, D. C., Wang, H., and Lohani, B.",
+      "title": "Extraction of tidal channel networks from airborne scanning laser altimetry and aerial photography",
+      "venue": "International symposium on Remote Sensing",
+      "doi": ""
+    },
+    {
+      "year": 2001,
+      "authors": "Lohani, B.",
+      "title": "Airborne altimetric LiDAR for topographic data collection: Issues and application",
+      "venue": "International conference MAPINDIA-2001",
+      "doi": ""
+    },
+    {
+      "year": 2000,
+      "authors": "Lohani, B.",
+      "title": "Application of airborne altimetric LiDAR in disaster management: An overview",
+      "venue": "Indian society for Remote Sensing Annual Symposium",
+      "doi": ""
+    },
+    {
+      "year": 2000,
+      "authors": "Lohani, B.",
+      "title": "A raster based approach for automatic quantification of drainage network geomorphology",
+      "venue": "Indian society for Remote Sensing Annual Symposium",
+      "doi": ""
+    },
+    {
+      "year": 1999,
+      "authors": "Lohani, B., and Mason, D. C.",
+      "title": "Extraction of tidal channel networks from LiDAR data",
+      "venue": "Fourth International Airborne Remote Sensing Conference & Exhibition",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "authors": "Mason, D. C., et al.",
+      "title": "Digital elevation models of the intertidal zone 1",
+      "venue": "Land Ocean Interaction Study Final Annual Meeting",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "authors": "Mason, D. C., et al.",
+      "title": "Digital elevation models of the intertidal zone 2",
+      "venue": "Land Ocean Interaction Study Final Annual Meeting",
+      "doi": ""
+    },
+    {
+      "year": 1995,
+      "authors": "Lohani, B., and Biswas, D.",
+      "title": "GIS: An interdisciplinary tool for engineers in 21st century",
+      "venue": "Engineering Education in 21st century",
+      "doi": ""
+    },
+    {
+      "year": 1995,
+      "authors": "Biswas, D., and Lohani, B.",
+      "title": "Mining in Antarctica",
+      "venue": "Engineering Education in 21st century",
+      "doi": ""
+    },
+    {
+      "year": 1993,
+      "authors": "Lohani, B., Tiwari, R. S., and Dubey, O. P.",
+      "title": "A PC based package for image enhancement",
+      "venue": "National Symposium of Indian Society of Remote Sensing",
+      "doi": ""
+    }
+  ],
+  "patents": [
+    {
+      "year": 2025,
+      "title": "A system and method for scenario generation using video for autonomous vehicles",
+      "number": "Indian Patent Application No. 202511024182"
+    },
+    {
+      "year": 2024,
+      "title": "A system and method for scenario generation through LLM for autonomous vehicles",
+      "number": "Indian Patent Application No. 202411007966"
+    },
+    {
+      "year": 2013,
+      "title": "A method and system for generating correct 3D geometry of moving object using laser scanning",
+      "number": "Patent No. 638/DEL/2013 (with DRDO)"
+    },
+    {
+      "year": 2012,
+      "title": "Flight planning for airborne data acquisition",
+      "number": "Patent No. 432115 · IPA 3392/DEL/2012"
+    },
+    {
+      "year": 2010,
+      "title": "Soundscape generation",
+      "number": "Patent No. 414122 · Application 2642/DEL/2010"
+    }
+  ],
+  "books": [
+    {
+      "year": 2018,
+      "authors": "Lohani, B., Ghosh, S., and Dashora, A.",
+      "title": "A Review of Standards for Airborne LiDAR Data Acquisition, Processing, QA/QC, and Delivery",
+      "publisher": "N. L. Sarda et al. (eds.), Geospatial Infrastructure, Applications and Technologies: India Case Studies",
+      "doi": "10.1007/978-981-13-2330-0_22"
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B.",
+      "title": "Airborne Altimetric LiDAR: Principle, Data Collection, Processing and Applications",
+      "publisher": "ISRO Tutor -Sensors and data processing, CSRE-IIT Bombay",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "authors": "Lohani, B.",
+      "title": "Video on Basic Surveying",
+      "publisher": "NPTEL-MHRD",
+      "doi": ""
+    },
+    {
+      "year": 2003,
+      "authors": "Roy, P. C., Joshi, P. K., and Lohani, B.",
+      "title": "LiDAR Remote Sensing For Forest Eco-System Studies in Geoinformatics for Tropical Ecosystems",
+      "publisher": "Asian Association of Remote Sensing, Japan",
+      "doi": ""
+    }
+  ]
+}
