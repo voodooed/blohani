@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Journal papers, conference papers, and patents from the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .pub-item { display: flex; gap: 20px; }
+  .pub-journal { font-size: 0.82rem; font-style: italic; color: var(--steel); margin-top: 4px; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">Publications</div>
+      <h1>Research Output</h1>
+      <p class="lead">Peer-reviewed journal papers, conference papers, and patents from the lab. New entries are added to <span class="mono">data/publications.json</span> as they're published.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="tabs" id="pub-tabs">
+        <button class="tab active" data-tab="journal">Journal Papers</button>
+        <button class="tab" data-tab="conference">Conference Papers</button>
+        <button class="tab" data-tab="patents">Patents</button>
+        <button class="tab" data-tab="books">Books</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-journal">
+        <div class="filter-row" id="journal-filter"></div>
+        <div class="row-list" id="journal-list"></div>
+        <button class="more-btn" id="journal-more-btn">Show more</button>
+      </div>
+
+      <div class="tab-panel" id="panel-conference">
+        <div class="row-list" id="conference-list"></div>
+      </div>
+
+      <div class="tab-panel" id="panel-patents">
+        <div class="row-list" id="patents-list"></div>
+      </div>
+
+      <div class="tab-panel" id="panel-books">
+        <div class="row-list" id="books-list"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+var allJournal = [];
+var showAllJournal = false;
+
+GeoLab.fetchJSON('data/publications.json').then(function (data) {
+  allJournal = data.journal || [];
+  initJournalFilter();
+  displayJournal(allJournal);
+  renderConference(data.conference || []);
+  renderPatents(data.patents || []);
+  renderBooks(data.books || []);
+}).catch(function () {
+  ['journal-list','conference-list','patents-list','books-list'].forEach(function(id){
+    GeoLab.showError(document.getElementById(id), 'publications');
+  });
+});
+
+initTabs();
+
+function initTabs() {
+  document.querySelectorAll('#pub-tabs .tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('#pub-tabs .tab').forEach(function (t) { t.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+function initJournalFilter() {
+  var years = [];
+  allJournal.forEach(function (p) { if (years.indexOf(p.year) === -1) years.push(p.year); });
+  years.sort(function (a, b) { return b - a; });
+  var el = document.getElementById('journal-filter');
+  el.innerHTML = '<button class="filter-btn active" data-year="all">All Years</button>' +
+    years.map(function (y) { return '<button class="filter-btn" data-year="' + y + '">' + y + '</button>'; }).join('');
+  el.addEventListener('click', function (e) {
+    if (!e.target.matches('.filter-btn')) return;
+    el.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+    var yr = e.target.dataset.year;
+    var filtered = yr === 'all' ? allJournal : allJournal.filter(function (p) { return String(p.year) === yr; });
+    showAllJournal = false;
+    displayJournal(filtered);
+  });
+}
+
+function displayJournal(pubs) {
+  var shown = showAllJournal ? pubs : pubs.slice(0, 6);
+  var el = document.getElementById('journal-list');
+  if (!shown.length) { el.innerHTML = GeoLab.emptyState('No publications match this filter yet.'); }
+  else {
+    el.innerHTML = shown.map(function (p) {
+      var doi = p.doi ? ' · <a class="row-link" href="https://doi.org/' + encodeURIComponent(p.doi) + '" target="_blank" rel="noopener">DOI ↗</a>' : '';
+      return '<div class="row-item"><div class="row-year mono">' + p.year + '</div><div><div class="row-title">' + GeoLab.escapeHTML(p.title) + '</div><div class="row-meta">' + GeoLab.escapeHTML(p.authors) + '</div><div class="pub-journal">' + GeoLab.escapeHTML(p.journal) + doi + '</div></div></div>';
+    }).join('');
+  }
+  var btn = document.getElementById('journal-more-btn');
+  btn.style.display = pubs.length > 6 ? 'block' : 'none';
+  btn.textContent = showAllJournal ? 'Show fewer' : 'Show all ' + pubs.length + ' journal papers';
+}
+
+document.addEventListener('click', function (e) {
+  if (e.target.id === 'journal-more-btn') {
+    showAllJournal = !showAllJournal;
+    var active = document.querySelector('#journal-filter .filter-btn.active');
+    var yr = active ? active.dataset.year : 'all';
+    var filtered = yr === 'all' ? allJournal : allJournal.filter(function (p) { return String(p.year) === yr; });
+    displayJournal(filtered);
+  }
+});
+
+function renderConference(items) {
+  var el = document.getElementById('conference-list');
+  if (!items.length) { el.innerHTML = GeoLab.emptyState('No conference papers listed yet.'); return; }
+  el.innerHTML = items.map(function (p) {
+    return '<div class="row-item"><div class="row-year mono">' + p.year + '</div><div><div class="row-title">' + GeoLab.escapeHTML(p.title) + '</div><div class="row-meta">' + GeoLab.escapeHTML(p.authors) + '</div><div class="pub-journal">' + GeoLab.escapeHTML(p.venue) + '</div></div></div>';
+  }).join('');
+}
+
+function renderPatents(items) {
+  var el = document.getElementById('patents-list');
+  if (!items.length) { el.innerHTML = GeoLab.emptyState('No patents listed yet.'); return; }
+  el.innerHTML = items.map(function (p) {
+    return '<div class="row-item"><div class="row-year mono">' + p.year + '</div><div><div class="row-title">' + GeoLab.escapeHTML(p.title) + '</div><div class="row-meta">' + GeoLab.escapeHTML(p.number) + '</div></div></div>';
+  }).join('');
+}
+
+function renderBooks(items) {
+  var el = document.getElementById('books-list');
+  if (!items.length) { el.innerHTML = GeoLab.emptyState('No books listed yet.'); return; }
+  el.innerHTML = items.map(function (b) {
+    return '<div class="row-item"><div class="row-year mono">' + b.year + '</div><div><div class="row-title">' + GeoLab.escapeHTML(b.title) + '</div><div class="row-meta">' + GeoLab.escapeHTML(b.publisher || '') + '</div></div></div>';
+  }).join('');
+}
+</script>
+</body>
+</html>

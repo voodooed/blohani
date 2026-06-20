@@ -1,0 +1,113 @@
+{
+  "news": [
+    {
+      "date": "2026-06",
+      "display_date": "June 2026",
+      "category": "Achievement",
+      "text": "Our team consisting of Dr. Priyanka, Dr. Moonis, and Dr. Vivek were shortlisted for the MoPR Hackathon.",
+      "link": "https://geo.intel.iittnif.com/activitiesinitiatives/mopr-hackathon"
+    },
+    {
+      "date": "2026-06",
+      "display_date": "June 2026",
+      "category": "Award",
+      "text": "Vivek Anand won the Best Paper Award in the Emerging Technologies category at SIAT 2026 by the Automotive Research Association of India (ARAI)."
+    },
+    {
+      "date": "2026-05",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Transfer Learning for Identifying Rainwater Harvesting Sites in Training Data-Scarce Catchments' accepted in Scientific Reports."
+    },
+    {
+      "date": "2026-04",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Integrating Lumped Hydrological Modelling with GIS-Based Flow Accumulation for Spatiotemporal Streamflow Estimation' published in Environmental Modelling & Software.",
+      "link": "https://doi.org/10.1016/j.envsoft.2026.107026"
+    },
+    {
+      "date": "2026-04",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Cross-modality learning between Aerial and Mobile LiDAR for Vegetation Segmentation' published in International Journal of Remote Sensing.",
+      "link": "https://doi.org/10.1080/01431161.2026.2661835"
+    },
+    {
+      "date": "2026-03",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Towards Closing the Sim-to-Real Gap for Autonomous Vehicles: A Physics-Guided Learning Approach for LiDAR Intensity Simulation' published in IEEE Transactions on Intelligent Transportation Systems.",
+      "link": "https://doi.org/10.1109/TITS.2026.3681982"
+    },
+    {
+      "date": "2026-03",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Ke-MLS: A Large-scale Labeled Mobile Lidar Data Set from Indian Urban Region' published in Environment and Planning B: Urban Analytics and City Science.",
+      "link": "https://doi.org/10.1177/23998083261430812"
+    },
+    {
+      "date": "2026-02",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Terrestrial and Airborne Laser Scanning Dataset of Trees in the Shivalik Range, India with Field Measurements and Leaf–Wood Classifications' published in Scientific Data.",
+      "link": "https://doi.org/10.1038/s41597-026-06674-w"
+    },
+    {
+      "date": "2026-02",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Advancing vegetation segmentation from ALS point clouds: From benchmarking to GreenSegNet-A' published in Science of Remote Sensing.",
+      "link": "https://doi.org/10.1016/j.srs.2026.100382"
+    },
+    {
+      "date": "2026-01",
+      "display_date": "2026",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Modeling Point Cloud Distortions in Mobile Laser Scanning for Surveying' published in Journal of Surveying Engineering, ASCE.",
+      "link": "https://doi.org/10.1061/JSUED2.SUENG-1663"
+    },
+    {
+      "date": "2025-12",
+      "display_date": "December 2025",
+      "category": "Award",
+      "text": "Moonis Ali won the Best Paper Award at IEEE InGARSS 2025, IIIT Bhubaneswar, for work on tree volume upscaling using LiDAR."
+    },
+    {
+      "date": "2025-11",
+      "display_date": "2025",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Improving Micro Rainwater Harvesting Site Selection with High-Resolution LiDAR DEMs: A GIS-Based Multi-Criteria Approach' published in Remote Sensing Applications: Society and Environment.",
+      "link": "https://doi.org/10.1016/j.rsase.2025.101839"
+    },
+    {
+      "date": "2025-10",
+      "display_date": "2025",
+      "category": "Publication",
+      "text": "New Journal Publication: 'A Hybrid Approach for Enhanced Tree Volume Estimation of Complex Trees Using Terrestrial LiDAR' published in GIScience & Remote Sensing.",
+      "link": "https://doi.org/10.1080/15481603.2025.2474836"
+    },
+    {
+      "date": "2025-09",
+      "display_date": "2025",
+      "category": "Publication",
+      "text": "New Journal Publication: 'Advancing LiDAR Intensity Simulation through Learning with Novel Physics-Based Modalities' published in IEEE Transactions on Intelligent Transportation Systems.",
+      "link": "https://doi.org/10.1109/TITS.2025.3532687"
+    },
+    {
+      "date": "2025-02",
+      "display_date": "February 2025",
+      "category": "Patent",
+      "text": "New Indian patent filed: a system and method for scenario generation using video for autonomous vehicles."
+    },
+    {
+      "date": "2025-01",
+      "display_date": "January 2025",
+      "category": "Industry",
+      "text": "SimDaaS Autonomy, a lab spin-off, receives seed funding at a ₹32 Cr post-money valuation."
+    }
+  ],
+  "events": [],
+  "workshops": []
+}

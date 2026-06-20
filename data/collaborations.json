@@ -1,0 +1,95 @@
+{
+  "industry": [
+    {
+      "name": "SimDaaS Autonomy Pvt. Ltd.",
+      "description": "Simulation platform for training and testing autonomous systems. Founded as an incubate at IIT Kanpur and received major seed funding in 2025.",
+      "link": "https://simdaas.com/"
+    },
+    {
+      "name": "Geokno India Pvt. Ltd.",
+      "description": "The first LiDAR company incubated at IIT Kanpur and pioneer of LiDAR services in India. Acquired by GMR Group.",
+      "link": "https://www.geokno.com/"
+    },
+    {
+      "name": "AUS Pvt. Ltd.",
+      "description": "Mentored start-up incubated at IIT Kanpur developing indigenous UAV and photogrammetric based mapping systems.",
+      "link": ""
+    },
+    {
+      "name": "Nebula Cloud by GVB Geomatics",
+      "description": "Mentored company focused on the design of cloud-based product solutions and market outreach.",
+      "link": ""
+    }
+  ],
+
+  "government": [
+    {
+      "name": "Department of Science & Technology (DST)",
+      "description": "Sponsor for numerous ongoing NGP projects including tree morphology upscaling, emergency vehicle accessibility using LiDAR, and mathematical flood modeling.",
+      "link": "https://dst.gov.in/"
+    },
+    {
+      "name": "National Mission for Clean Ganga (NMCG)",
+      "description": "Executed Ganga LiDAR mapping for NMCG and the National Hydrology Project (NHP), surveying over 40,000 sq km.",
+      "link": "https://nmcg.nic.in/"
+    },
+    {
+      "name": "National Highways Authority of India (NHAI)",
+      "description": "Developed the methodology for Mobile LiDAR surveys for Road DPRs, leading NHAI to mandate LiDAR technology for such surveys nationwide.",
+      "link": "https://nhai.gov.in/"
+    },
+    {
+      "name": "Defence Research and Development Organisation (DRDO)",
+      "description": "Collaborated on 3D City modeling, technology development for motion correction during laser scanning, and 3D imaging of strategic naval targets.",
+      "link": "https://www.drdo.gov.in/"
+    },
+    {
+      "name": "Indian Space Research Organisation (ISRO)",
+      "description": "Developed the waveform and topographic data simulator for the LLRI onboard the Chandrayaan-1 lunar mission.",
+      "link": "https://www.isro.gov.in/"
+    },
+    {
+      "name": "IDEAS TiH - ISI Kolkata",
+      "description": "Sponsored research for the development of deep learning and LiDAR-guided precision spraying tools for orchards.",
+      "link": "https://www.isical.ac.in/"
+    }
+  ],
+
+  "academic": [
+    {
+      "name": "TU Wien (Vienna University of Technology), Austria",
+      "description": "Collaborative research on terrestrial and airborne laser scanning for tree volume and biomass estimation.",
+      "link": "https://www.tuwien.at/en/",
+      "persons": [
+        { "name": "Dr. Marcus Hollaus", "link": "" },
+        { "name": "Dr. Norbert Pfeifer", "link": "" }
+      ]
+    },
+    {
+      "name": "University of Melbourne, Australia",
+      "description": "Joint PhD supervision and research on urban vegetation segmentation and city forest characterization.",
+      "link": "https://www.unimelb.edu.au/",
+      "persons": [
+        { "name": "Dr. Jagannath Aryal", "link": "" },
+        { "name": "Dr. Stephan Winter", "link": "" },
+        { "name": "Dr. Dongryeol Ryu", "link": "" }
+      ]
+    },
+    {
+      "name": "Texas A&M University (TAMU), USA",
+      "description": "Collaborative research on learning-based LiDAR intensity simulation and physics-informed neural network models.",
+      "link": "https://www.tamu.edu/",
+      "persons": [
+        { "name": "Dr. Gaurav Pandey", "link": "" }
+      ]
+    },
+    {
+      "name": "Indian Institute of Remote Sensing (IIRS), Dehradun",
+      "description": "Co-supervision of research on LiDAR-based vegetation applications.",
+      "link": "https://www.iirs.gov.in/",
+      "persons": [
+        { "name": "Prof. Y V N Krishna Murthy", "link": "" }
+      ]
+    }
+  ]
+}

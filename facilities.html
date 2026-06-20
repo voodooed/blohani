@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="LiDAR sensors, vehicles, datasets, computing infrastructure, and experimental platforms at the Geoinformatics Laboratory, IIT Kanpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .facility-card { display: flex; flex-direction: column; height: 100%; }
+  .facility-cat { font-family: var(--f-mono); font-size: 0.7rem; color: var(--steel); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .facility-specs { font-size: 0.84rem; color: var(--muted); line-height: 1.6; margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+  .dataset-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 26px; display: flex; flex-direction: column; justify-content: space-between; }
+  .dataset-access { margin-top: 16px; font-size: 0.78rem; font-weight: 600; color: var(--steel); }
+  .dataset-btn { display: inline-block; margin-top: 8px; padding: 6px 14px; border: 1px solid var(--navy); color: var(--navy); border-radius: 4px; text-decoration: none; font-size: 0.8rem; transition: all 0.2s; }
+  .dataset-btn:hover { background: var(--navy); color: var(--white); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">Facilities</div>
+      <h1>Facilities & Research Infrastructure</h1>
+      <p class="lead">The laboratory's facilities support research in LiDAR technologies, geospatial science, and spatial data analytics through advanced sensing systems, computing resources, software platforms, and field-deployment capabilities.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">LiDAR Sensors</div>
+        <h2 class="section-title">Scanning Hardware</h2>
+        <p class="section-desc">Airborne, mobile, and terrestrial scanners used across the lab's projects.</p>
+      </div>
+      <div class="grid-3" id="sensors-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Mobile Mapping</div>
+        <h2 class="section-title">Vehicles &amp; Mounts</h2>
+        <p class="section-desc">Platforms used for mobile and vehicle-mounted LiDAR data acquisition.</p>
+      </div>
+      <div class="grid-3" id="vehicles-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Datasets</div>
+        <h2 class="section-title">Published &amp; In-House Datasets</h2>
+        <p class="section-desc">Labelled point cloud datasets produced by the lab, several released openly for the research community.</p>
+      </div>
+      <div class="grid-2" id="datasets-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Computing</div>
+        <h2 class="section-title">Computing Infrastructure</h2>
+        <p class="section-desc">Hardware supporting deep learning, simulation, and large-scale point cloud processing.</p>
+      </div>
+      <div class="grid-3" id="computing-grid"></div>
+    </div>
+  </section>
+
+  <section class="section navy">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Experimental Platforms</div>
+        <h2 class="section-title">Software &amp; Simulation Tools</h2>
+        <p class="section-desc">In-house platforms developed and maintained by the lab, used by researchers worldwide.</p>
+      </div>
+      <div class="grid-3" id="platforms-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+GeoLab.fetchJSON('data/facilities.json').then(function (data) {
+  renderFacilityCards('sensors-grid', data.sensors, 'radar');
+  renderFacilityCards('vehicles-grid', data.vehicles, 'truck');
+  renderDatasets(data.datasets);
+  renderFacilityCards('computing-grid', data.computing, 'server', false);
+  renderFacilityCards('platforms-grid', data.platforms, 'cpu', true);
+}).catch(function () {
+  ['sensors-grid','vehicles-grid','datasets-grid','computing-grid','platforms-grid'].forEach(function (id) {
+    GeoLab.showError(document.getElementById(id), 'facilities information');
+  });
+});
+
+function renderFacilityCards(elId, items, icon, navy) {
+  var el = document.getElementById(elId);
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No entries yet in this category.'); return; }
+  el.innerHTML = items.map(function (f) {
+    var cardClass = navy ? 'card' : 'card facility-card';
+    var style = navy ? ' style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);"' : '';
+    var titleStyle = navy ? ' style="color:#fff;"' : '';
+    var descStyle = navy ? ' style="color:rgba(255,255,255,0.65);"' : '';
+    var specs = f.specs ? '<div class="facility-specs"' + descStyle + '>' + GeoLab.escapeHTML(f.specs) + '</div>' : '';
+    var category = f.category ? '<div class="facility-cat">' + GeoLab.escapeHTML(f.category) + '</div>' : '';
+    var link = f.link ? '<div class="dataset-access"><a href="' + GeoLab.escapeHTML(f.link) + '" target="_blank" rel="noopener">Visit →</a></div>' : '';
+    return '<div class="' + cardClass + '"' + style + '>' +
+      '<div class="card-icon">' + GeoLab.svgIcon(icon) + '</div>' +
+      category +
+      '<h3' + titleStyle + '>' + GeoLab.escapeHTML(f.name) + '</h3>' +
+      '<p' + descStyle + '>' + GeoLab.escapeHTML(f.description || '') + '</p>' +
+      specs + link +
+      '</div>';
+  }).join('');
+}
+
+function renderDatasets(items) {
+  var el = document.getElementById('datasets-grid');
+  if (!items || !items.length) { el.innerHTML = GeoLab.emptyState('No datasets listed yet.'); return; }
+  el.innerHTML = items.map(function (d) {
+    var accessText = '<span style="display:block;">' + GeoLab.escapeHTML(d.access) + '</span>';
+    var linkBtn = d.link ? '<a href="' + GeoLab.escapeHTML(d.link) + '" class="dataset-btn" target="_blank" rel="noopener">Access Link &rarr;</a>' : '';
+    return '<div class="dataset-card">' +
+             '<div><h3 style="margin-bottom:10px;">' + GeoLab.escapeHTML(d.name) + '</h3>' +
+             '<p style="font-size:0.88rem;color:var(--muted);line-height:1.65;">' + GeoLab.escapeHTML(d.description) + '</p></div>' +
+             '<div class="dataset-access">' + accessText + linkBtn + '</div>' +
+           '</div>';
+  }).join('');
+}
+</script>
+</body>
+</html>

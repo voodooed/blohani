@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Geoinformatics Laboratory, IIT Kanpur</title>
+<meta name="description" content="Get in touch with the Geoinformatics Laboratory, IIT Kanpur for research collaboration, industry partnerships, or any LiDAR-related query.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .contact-card { text-align: left; }
+  .contact-card a, .contact-card .ctext { display: block; font-size: 0.92rem; color: var(--ink); font-weight: 500; word-break: break-word; }
+  .contact-card a:hover { color: var(--steel); }
+
+  .contact-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: start; }
+  @media (max-width: 980px) { .contact-layout { grid-template-columns: 1fr; } .contact-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .form-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg);
+    padding: 32px; box-shadow: var(--shadow-sm);
+  }
+  .form-row { margin-bottom: 18px; }
+  .form-row label {
+    display: block; font-size: 0.82rem; font-weight: 600; color: var(--ink); margin-bottom: 6px;
+  }
+  .form-row input, .form-row select, .form-row textarea {
+    width: 100%; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: var(--r-sm);
+    font-family: var(--f-body); font-size: 0.92rem; color: var(--ink); background: var(--off-white);
+    transition: border-color 0.15s;
+  }
+  .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+    outline: none; border-color: var(--steel); background: var(--white);
+  }
+  .form-row textarea { resize: vertical; min-height: 120px; }
+  .form-note { font-size: 0.78rem; color: var(--muted); margin-top: 14px; line-height: 1.6; }
+
+  .map-wrap {
+    border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm); aspect-ratio: 4 / 3;
+  }
+  .map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+  .office-block { margin-top: 24px; }
+  .office-block h3 { font-size: 0.98rem; margin-bottom: 10px; }
+  .office-block p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">DEPT. OF CIVIL ENGINEERING · IIT KANPUR</span>
+    <div class="topbar-links">
+      <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      <a href="tel:+915123927413">+91-512-392 7413</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+          <circle cx="12" cy="12" r="10.5" stroke-dasharray="1.5 4" opacity="0.5"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="b1">Geoinformatics Laboratory</span>
+        <span class="b2">IIT Kanpur</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="collaborations.html">Collaborations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="scan-field"></div>
+    <div class="container">
+      <div class="page-eyebrow">Get in Touch</div>
+      <h1>Get in Touch</h1>
+      <p class="lead">We welcome inquiries related to research collaborations, consulting, student opportunities, LiDAR technologies, geospatial science, and interdisciplinary applications.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid" id="contact-cards">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM + MAP -->
+  <section class="section alt">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="form-card">
+          <h2 style="font-size:1.3rem;margin-bottom:6px;">Send Us a Message</h2>
+          <p style="font-size:0.88rem;color:var(--muted);margin-bottom:24px;">We welcome inquiries related to research collaborations, academic interactions, student opportunities, LiDAR technologies, and geospatial applications.</p>
+          <form id="contact-form">
+            <div class="form-row">
+              <label for="cf-name">Full name</label>
+              <input type="text" id="cf-name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email address</label>
+              <input type="email" id="cf-email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="cf-org">Organization / Institution <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
+              <input type="text" id="cf-org" name="org">
+            </div>
+            <div class="form-row">
+              <label for="cf-subject">Subject</label>
+              <select id="cf-subject" name="subject">
+                <option>Research Collaboration</option>
+                <option>Industry Partnership</option>
+                <option>PhD / MTech Admission Query</option>
+                <option>LiDAR Technical Query</option>
+                <option>Media / Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background:var(--navy);color:#fff;width:100%;justify-content:center;">Send Message</button>
+            <p class="form-note">Submitting this form opens your email client with the message pre-filled, addressed to <strong>blohani@iitk.ac.in</strong>. We typically respond within 2–3 working days.</p>
+          </form>
+        </div>
+
+        <div>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Department+of+Civil+Engineering,+IIT+Kanpur,+Kanpur,+Uttar+Pradesh+208016&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Location of the Department of Civil Engineering, IIT Kanpur">
+            </iframe>
+          </div>
+          <div class="office-block">
+            <h3>Visit Us</h3>
+            <p id="office-address">Department of Civil Engineering, Indian Institute of Technology Kanpur, Kanpur 208 016, Uttar Pradesh, India</p>
+          </div>
+          <div class="office-block">
+            <h3>Office Hours</h3>
+            <p>Monday – Friday, 9:30 AM – 5:30 PM IST. Visits by prior appointment are recommended.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="2.5" fill="white" stroke="none"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <span class="brand-text"><span class="b1" style="font-size:0.95rem;">LiDAR@Geoinformatics Laboratory</span></span>
+        </div>
+        <p>Advancing research and innovation in LiDAR, geospatial technologies, and spatial intelligence. Department of Civil Engineering, IIT Kanpur.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <a href="facilities.html">Facilities</a>
+        <a href="collaborations.html">Collaborations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <a href="https://www.iitk.ac.in" target="_blank" rel="noopener">IIT Kanpur</a>
+        <a href="https://www.iitk.ac.in/ce/" target="_blank" rel="noopener">Dept. of Civil Engineering</a>
+        <a href="mailto:blohani@iitk.ac.in">blohani@iitk.ac.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+        © LiDAR@Geoinformatics Laboratory, IIT Kanpur. All rights reserved.
+    </span>
+
+    <span class="footer-credit">
+      Designed and developed by
+      <a href="https://home.iitk.ac.in/~viveka21/"
+         target="_blank"
+         rel="noopener"
+         class="developer-link">
+         Vivek Anand
+      </a>
+  </span>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+GeoLab.fetchJSON('data/team.json').then(function (data) {
+  renderContactCards(data.professor || {});
+}).catch(function () {
+  renderContactCards({
+    email: 'blohani@iitk.ac.in',
+    phone: '+91-512-392 7413',
+    office: 'Department of Civil Engineering, IIT Kanpur, Kanpur 208 016, India'
+  });
+});
+
+function renderContactCards(prof) {
+  var el = document.getElementById('contact-cards');
+  var email = prof.email || 'blohani@iitk.ac.in';
+  var phone = prof.phone || '+91-512-392 7413';
+  var office = prof.office || 'Department of Civil Engineering, IIT Kanpur, Kanpur 208 016, India';
+  el.innerHTML =
+    '<div class="card contact-card">' +
+      '<div class="card-icon">' + svgMail() + '</div>' +
+      '<h3>Email</h3>' +
+      '<a href="mailto:' + GeoLab.escapeHTML(email) + '">' + GeoLab.escapeHTML(email) + '</a>' +
+    '</div>' +
+    '<div class="card contact-card">' +
+      '<div class="card-icon">' + svgPhone() + '</div>' +
+      '<h3>Phone</h3>' +
+      '<a href="tel:' + GeoLab.escapeHTML(phone.replace(/[^+\d]/g, '')) + '">' + GeoLab.escapeHTML(phone) + '</a>' +
+    '</div>' +
+    '<div class="card contact-card">' +
+      '<div class="card-icon">' + svgPin() + '</div>' +
+      '<h3>Office</h3>' +
+      '<span class="ctext">' + GeoLab.escapeHTML(office) + '</span>' +
+    '</div>';
+  var addrEl = document.getElementById('office-address');
+  if (addrEl) addrEl.textContent = office;
+}
+
+function svgMail() {
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>';
+}
+function svgPhone() {
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.45 5.45l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>';
+}
+function svgPin() {
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
+}
+
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('cf-name').value;
+  var email = document.getElementById('cf-email').value;
+  var org = document.getElementById('cf-org').value;
+  var subject = document.getElementById('cf-subject').value;
+  var message = document.getElementById('cf-message').value;
+  var body = 'Name: ' + name + '\nEmail: ' + email + (org ? '\nOrganization: ' + org : '') + '\n\n' + message;
+  var mailto = 'mailto:blohani@iitk.ac.in?subject=' + encodeURIComponent('[Lab Website] ' + subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+});
+</script>
+</body>
+</html>
