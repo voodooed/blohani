@@ -6,7 +6,7 @@
     "institution": "Indian Institute of Technology Kanpur",
     "email": "blohani@iitk.ac.in",
     "phone": "+91-512-392 7413",
-    "office": "Department of Civil Engineering, IIT Kanpur, Kanpur 208 016, India",
+    "office": "503, ESB-1, IIT Kanpur, Kanpur 208 016, India",
     "bio": "Dr. Bharat Lohani is a Professor of Geoinformatics in the Department of Civil Engineering at the Indian Institute of Technology Kanpur (IIT Kanpur). He is widely recognized as a leading expert in LiDAR (Light Detection and Ranging) technology, 3D laser scanning, and remote sensing within India. Alongside his academic contributions, Dr. Lohani is an entrepreneurial innovator who co-founded companies like Geokno India Pvt. Ltd. and SimDaaS Autonomy Pvt. Ltd. to transition geospatial research into industrial commercial applications.",
     "photo": "data/photos/bharat-lohani.jpg",
     "fellowships": [
@@ -60,6 +60,7 @@
       "role": "Fellow, Academic and Research Excellence",
       "topic": "Upscaling of plot level TLS observation to ALS data for biomass estimation",
       "photo": "data/photos/moonis-ali.jpg",
+      "email": "moonisali20@iitk.ac.in",
       "linkedin": "https://www.linkedin.com/in/moonis-ali-iitk/",
       "website": "https://home.iitk.ac.in/~moonisali20/"
     },
@@ -68,6 +69,7 @@
       "role": "Fellow, Academic and Research Excellence",
       "topic": "Automatic identification of rain water harvesting sites and structures using LiDAR data, GIS and DSS",
       "photo": "data/photos/sri-priyanka.jpg",
+      "email": "spriyankak20@iitk.ac.in",
       "linkedin": "https://www.linkedin.com/in/dr-sri-priyanka-kommula-65639614/"
       
     },
@@ -76,6 +78,7 @@
       "role": "Fellow, Academic and Research Excellence",
       "topic": "City forest characterization using MLS and ALS data",
       "photo": "data/photos/aditya-a.jpg",
+      "email": "aditya20@iitk.ac.in",
       "linkedin": "https://www.linkedin.com/in/adityak-connect/"
     }
     
@@ -149,10 +152,20 @@
       "website": "https://home.iitk.ac.in/~viveka21/"
       },
       {
+        "name": "Moonis Ali",
+        "year": "2026",
+        "topic": "Upscaling of plot level TLS observation to ALS data for biomass estimation",
+        "photo": "data/photos/moonis-ali.jpg",
+        "email": "moonisali20@iitk.ac.in",
+        "linkedin": "https://www.linkedin.com/in/moonis-ali-iitk/",
+        "website": "https://home.iitk.ac.in/~moonisali20/"
+      },
+      {
         "name": "Sri Priyanka",
         "year": "2026",
         "topic": "Automatic identification of rain water harvesting sites and structures using LiDAR data, GIS and DSS",
         "photo": "data/photos/sri-priyanka.jpg",
+        "email": "spriyankak20@iitk.ac.in",
         "linkedin": "https://www.linkedin.com/in/dr-sri-priyanka-kommula-65639614/"
       },
       {
@@ -160,15 +173,8 @@
         "year": "2026",
         "topic": "City forest characterization using MLS and ALS data",
         "photo": "data/photos/aditya-a.jpg",
+        "email": "aditya20@iitk.ac.in",
         "linkedin": "https://www.linkedin.com/in/adityak-connect/"
-      },
-      {
-        "name": "Moonis Ali",
-        "year": "2026",
-        "topic": "Upscaling of plot level TLS observation to ALS data for biomass estimation",
-        "photo": "data/photos/moonis-ali.jpg",
-        "linkedin": "https://www.linkedin.com/in/moonis-ali-iitk/",
-        "website": "https://home.iitk.ac.in/~moonisali20/"
       },
       {
         "name": "Aswani Kumar Munnangi",
